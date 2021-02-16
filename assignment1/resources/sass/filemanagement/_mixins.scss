@@ -1,0 +1,8 @@
+@mixin font-color($color) {
+    @if $color == black {
+        color: adjust-color($color, $lightness: -10%);
+    }
+    @else {
+        color: $color;
+    }
+}

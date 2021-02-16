@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&family=Orbitron:wght@500;900&family=Oswald&display=swap");
+/* Variables */
+/* --Fonts-- */
+/* Orbitron - 500/900 (Logo) */
+/* Oswald - Headings */
+/* Open Sans 400/700 (Body) */
+/* Screen Sizes */
+/* https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header header header header header header" "left left left left left left" "middle middle middle middle middle middle" "right right right right right right" "footer footer footer footer footer footer";
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: header;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Nav */
+#hamnav label {
+  display: inline-block;
+  color: white;
+  background: #a02620;
+  font-style: normal;
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+#hamnav input {
+  display: none;
+}
+
+#hamitems a {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-top: 1px solid #333;
+}
+
+#hamitems {
+  display: none;
+}
+
+#hamnav input:checked ~ #hamitems {
+  display: block;
+}
+
+h1 {
+  font-family: "Orbitron", sans-serif;
+}
+
+.left {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: left;
+}
+
+.middle {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: middle;
+}
+
+.right {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: right;
+}
+
+footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: footer;
+}
+
+@media (min-width: 660px) {
+  .container {
+        grid-template-areas: "header header header header header header" "left left middle middle right right" "footer footer footer footer footer footer";
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* [ON BIG SCREEN] */
+  /* Wrapper */
+  #hamnav {
+    width: 50%;
+    background: #000;
+    margin-left: 3rem;
+  }
+  /* Hide Hamburger */
+  #hamnav label, #hamburger {
+    display: none;
+  }
+  /* Horizontal Menu Items */
+  #hamitems {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  #hamitems a {
+    width: 100%;
+    /* 100% / 5 tabs = 20% */
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+  #hamitems a:hover {
+    background: #401408;
+  }
+}
+/*# sourceMappingURL=style.css.map */

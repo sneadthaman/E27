@@ -1,0 +1,9 @@
+@media (min-width: 660px) {
+    .container {
+        grid-template-areas:
+            "header header header header header header"
+            "jumbo jumbo jumbo jumbo jumbo jumbo"
+            "left left middle middle right right"
+            "footer footer footer footer footer footer";
+    }
+}

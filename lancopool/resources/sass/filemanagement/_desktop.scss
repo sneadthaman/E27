@@ -1,0 +1,27 @@
+@media screen and (min-width: $medium) {
+    /* [ON BIG SCREEN] */
+/* Wrapper */
+#hamnav {
+    width: 50%;
+    background: #000;
+    margin-left: 3rem;
+  }
+  
+  /* Hide Hamburger */
+  #hamnav label, #hamburger { display: none; }
+  
+  /* Horizontal Menu Items */
+  #hamitems { 
+      display: flex;
+ }
+  #hamitems a {
+    width: 100%; /* 100% / 5 tabs = 20% */
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+  #hamitems a:hover {
+    background: #401408;
+  }
+}

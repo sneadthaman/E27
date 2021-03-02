@@ -23,6 +23,11 @@ a {
     &:visited { color: $white; }
 }
 
+#food {
+    font-family: $decorative-font;
+    color: black;
+}
+
 ul { list-style: none; }
 
 .jumbotron {
@@ -40,6 +45,7 @@ ul { list-style: none; }
 
     nav {
         background-color: $white;
+        display: flex;
 
         ul {
             list-style: none;

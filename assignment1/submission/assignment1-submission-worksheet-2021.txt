@@ -1,39 +1,46 @@
-Your name:
+Your name: Sam Janvey
 
 1. Provide a link to the first page of your website:
 
-My site looks the way I want on (choose one): Mac  PC
+https://e27p1.samjanvey.com
 
-With this browser (choose one): Firefox Chrome 
+My site looks the way I want on (choose one):  PC
+
+With this browser (choose one): Firefox 
 
 PART 1: BASE RESPONSIVE WEBSITE 
 
-1. I used    Flexbox    Grid    Flexbox and Grid    in making my responsive website.
+1. I used  Flexbox and Grid  in making my responsive website.
 
 2. Sass partial file name and line number where a media query appears:
 
+_tablet.scss : line 1
+
 3. Cite your images here:
+
+Background image was purchased on Shutterstock and contains a standard license for unlimited web distribution.
 
 4. Certify you wrote your own content by typing an affirmative statement here: 
 
+I have written all of the content for this webpage unless otherwise cited.
 
 
 PART 2: SASS 
 Provide partial file name(s) and starting line number(s) for the comment in Sass for the start of each item.
 
-5. Sass variable list:
+5. Sass variable list: _variables.scss line 1
 
-6. 1 custom-coded mixin:
+6. 1 custom-coded mixin: _mixins.scss line 1 - 8, _mobile.scss line 13
 
-7. 1 extend:
+7. 1 extend: _mobile.scss line 131
 
-8. 2 levels of nesting:
+8. 2 levels of nesting: _mobile.scss line 28 - 62
 
-9. 2 instances of built-in Sass functions:
+9. 2 instances of built-in Sass functions: _variables.scss line 11 , _mixins.scss line 3
 
-10. 1 use of if/else
+10. 1 use of if/else: _mixins.scss line 2-7
 
-11. The names of at least 2 partial files
+11. The names of at least 2 partial files: _variables.scss, _mobile.scss
 
 
 
@@ -42,6 +49,10 @@ Provide partial file name(s) and starting line number(s) for the comment in Sass
 
 GRADS ONLY: ABOVE AND BEYOND (10 POINTS)
 Identify what you did for Above and Beyond. Provide any relevant HTML, CSS, or Sass line number(s) and explanation of what you did. How many points do you think this was worth, and why?
+
+I've utilized a good amount of file management techniques*. I've also combined (_mixins.scss) a custom mixin (with argument) with an if/else and a Sass function. 10 points 
+
+*I've noticed that building the Sass files this way "breaks" the Sass watcher module in VS Code. Now I have to make a small change to style.scss in order for the changes to display. 
 
 
 

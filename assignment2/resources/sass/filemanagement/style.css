@@ -1,0 +1,202 @@
+/* Fonts */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #d6e4ea;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #d6e4ea;
+}
+
+ul {
+  list-style: none;
+}
+
+.jumbotron {
+  background: -webkit-gradient(linear, left top, right top, from(#3204fde6), to(#9907fae6)), url("../../images/main-jumbo_690px.jpg") no-repeat top center;
+  background: linear-gradient(to right, #3204fde6, #9907fae6), url("../../images/main-jumbo_690px.jpg") no-repeat top center;
+  max-width: 100%;
+  height: 100vh;
+}
+
+.jumbotron h1 {
+  font-family: "Great Vibes", cursive;
+  color: #d6e4ea;
+  letter-spacing: .5rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.jumbotron nav {
+  background-color: #d6e4ea;
+}
+
+.jumbotron nav ul {
+  list-style: none;
+  display: inline-block;
+}
+
+.jumbotron nav ul li {
+  display: inline;
+}
+
+.jumbotron nav ul li a {
+  text-decoration: none;
+  color: #5c05b9;
+  text-transform: uppercase;
+  padding: .3rem;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+.jumbotron footer p {
+  color: #d6e4ea;
+  text-align: right;
+  margin-right: 1rem;
+}
+
+.jumbotron footer .icons {
+  font-size: 2rem;
+  color: #d6e4ea;
+  text-align: center;
+}
+
+.jumbotron footer .icons a:link,
+.jumbotron footer .icons a:visited,
+.jumbotron footer .icons a:hover,
+.jumbotron footer .icons a:active {
+  color: #d6e4ea;
+}
+
+.jumbotron footer .icons i {
+  margin: 1rem;
+}
+
+.jumbotron form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.jumbotron form label {
+  color: #d6e4ea;
+  padding: 1rem;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.jumbotron form input, .jumbotron form textarea {
+  border-radius: 1rem;
+}
+
+.jumbotron form a {
+  width: 65%;
+  margin: 1.5rem auto;
+  text-transform: uppercase;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  background-color: #d6e4ea;
+  padding: 1rem 1.3rem;
+  border-radius: 1rem;
+}
+
+.jumbotron form a:hover {
+  font-size: 1.1rem;
+}
+
+.flex-container, .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.books {
+  border: 1px solid #d6e4ea;
+  margin: 2rem auto;
+  max-width: 30%;
+}
+
+.books a {
+  color: #d6e4ea;
+  text-align: center;
+}
+
+.books a:visited {
+  color: #d6e4ea;
+}
+
+#check-out {
+  color: #d6e4ea;
+  margin: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+#check-out h2 {
+  letter-spacing: 0.3rem;
+}
+
+#check-out i {
+  color: #d6e4ea;
+  font-size: 3rem;
+  margin: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    background: -webkit-gradient(linear, left top, right top, from(#3204fde6), to(#9907fae6)), url("../../images/main-jumbo_1200px.jpg") no-repeat center;
+    background: linear-gradient(to right, #3204fde6, #9907fae6), url("../../images/main-jumbo_1200px.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+  }
+  .jumbotron nav a {
+    font-size: 1.65rem;
+  }
+  .flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+/*# sourceMappingURL=style.css.map */

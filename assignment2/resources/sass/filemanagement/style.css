@@ -1,7 +1,27 @@
 /* Fonts */
+:root {
+  /* Main content width */
+  --section-width: 80%;
+  /* Typefont Scaling */
+  --base-font-size: 16px;
+  --scale-factor: 1.25;
+  --h5-font-size: calc(var(--base-font-size) * var(--scale-factor));
+  --h4-font-size: calc(var(--h5-font-size) * var(--scale-factor));
+  --h3-font-size: calc(var(--h4-font-size) * var(--scale-factor));
+  --h2-font-size: calc(var(--h3-font-size) * var(--scale-factor));
+  --h1-font-size: calc(var(--h2-font-size) * var(--scale-factor));
+  --p-font-size: calc(var(--h5-font-size) * var(--scale-factor));
+  --small-font-size: calc(var(--base-font-size) / var(--scale-factor));
+  /* Global Styles */
+  --my-padding: 1rem;
+  --my-margin: 1rem 1.75rem;
+  --my-border-radius: 10px;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-size: 100%;
 }
 
 *, *:before, *:after {
@@ -12,191 +32,201 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-size: 16px;
-  color: #d6e4ea;
+  font-size: var(--base-font-size);
+  color: #5c05b9;
 }
 
-.container {
-  display: -ms-grid;
-  display: grid;
+h1 {
+  font-size: var(--h1-font-size);
+  font-family: "Great Vibes", cursive;
 }
 
-a {
-  text-decoration: none;
+h2 {
+  font-size: var(--h2-font-size);
+  font-family: "Didact Gothic", sans-serif;
 }
 
-a:visited {
-  color: #d6e4ea;
+h3 {
+  font-size: var(--h3-font-size);
 }
 
-ul {
+h4 {
+  font-size: var(--h4-font-size);
+}
+
+h5 {
+  font-size: var(--h5-font-size);
+}
+
+p {
+  font-size: var(--p-font-size);
+  margin: var(--my-margin);
+}
+
+.small-font {
+  font-size: var(--small-font-size);
+  font-family: "Poiret One", sans-serif;
+}
+
+nav {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: var(--section-width);
+}
+
+#logo p {
+  margin: 0;
+  padding: 0;
+}
+
+#food {
+  font-family: "Parisienne", cursive;
+  font-size: var(--h3-font-size);
+}
+
+#haven {
+  font-family: "Monoton", sans-serif;
+  font-size: var(--h2-font-size);
+}
+
+#searchbar {
+  -ms-flex-preferred-size: calc(var(--section-width) - 30%);
+      flex-basis: calc(var(--section-width) - 30%);
+  margin-left: 2rem;
+}
+
+#searchbar > input {
+  width: 100%;
+  border-radius: var(--my-border-radius);
+  height: 2.3rem;
+}
+
+nav ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+nav ul a {
+  text-decoration: none;
+  padding: var(--my-padding);
+  font-family: "Didact Gothic", sans-serif;
+  margin-left: 1rem;
+  font-size: var(--h5-font-size);
+  color: #d6e4ea;
 }
 
 .jumbotron {
-  background: -webkit-gradient(linear, left top, right top, from(#3204fde6), to(#9907fae6)), url("../../images/main-jumbo_690px.jpg") no-repeat top center;
-  background: linear-gradient(to right, #3204fde6, #9907fae6), url("../../images/main-jumbo_690px.jpg") no-repeat top center;
-  max-width: 100%;
+  background-image: url("../../images/main-jumbo_large.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
 }
 
-.jumbotron h1 {
-  font-family: "Great Vibes", cursive;
-  color: #d6e4ea;
-  letter-spacing: .5rem;
-  font-size: 3rem;
-  text-align: center;
+main {
+  margin: 5rem 0;
 }
 
-.jumbotron nav {
-  background-color: #d6e4ea;
+main, footer {
+  font-family: "Crimson Text", serif;
+  color: black;
 }
 
-.jumbotron nav ul {
-  list-style: none;
-  display: inline-block;
+main section {
+  margin: 4rem auto;
 }
 
-.jumbotron nav ul li {
-  display: inline;
+main #about-chef {
+  width: calc(var(--section-width) - 15%);
 }
 
-.jumbotron nav ul li a {
-  text-decoration: none;
-  color: #5c05b9;
-  text-transform: uppercase;
-  padding: .3rem;
-  font-family: "Didact Gothic", sans-serif;
-  font-weight: bold;
-  letter-spacing: 0.1rem;
-}
-
-.jumbotron footer p {
-  color: #d6e4ea;
-  text-align: right;
-  margin-right: 1rem;
-}
-
-.jumbotron footer .icons {
-  font-size: 2rem;
-  color: #d6e4ea;
-  text-align: center;
-}
-
-.jumbotron footer .icons a:link,
-.jumbotron footer .icons a:visited,
-.jumbotron footer .icons a:hover,
-.jumbotron footer .icons a:active {
-  color: #d6e4ea;
-}
-
-.jumbotron footer .icons i {
-  margin: 1rem;
-}
-
-.jumbotron form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 80%;
+section img {
+  display: block;
+  width: 360px;
   margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
-.jumbotron form label {
-  color: #d6e4ea;
-  padding: 1rem;
-  font-family: "Didact Gothic", sans-serif;
+section article {
+  height: 540px;
 }
 
-.jumbotron form input, .jumbotron form textarea {
-  border-radius: 1rem;
-}
-
-.jumbotron form a {
-  width: 65%;
-  margin: 1.5rem auto;
-  text-transform: uppercase;
-  font-family: "Didact Gothic", sans-serif;
-  font-weight: bold;
-  letter-spacing: 0.1rem;
-  text-align: center;
-  background-color: #d6e4ea;
-  padding: 1rem 1.3rem;
-  border-radius: 1rem;
-}
-
-.jumbotron form a:hover {
-  font-size: 1.1rem;
-}
-
-.flex-container, .flex {
+#featured-recipe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.flex {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
-.books {
-  border: 1px solid #d6e4ea;
-  margin: 2rem auto;
-  max-width: 30%;
+#featured-recipe h1 {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  margin-right: 1.5rem;
 }
 
-.books a {
+#featured-recipe article {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+#featured-img1 {
+  background-image: url("../../images/food/540x720/tacos_720x540.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#featured-img2 {
+  background-image: url("../../images/food/540x720/ceviche_540x720.JPEG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 4rem;
+}
+
+footer, footer i {
+  background-color: #5c05b9;
   color: #d6e4ea;
-  text-align: center;
 }
 
-.books a:visited {
-  color: #d6e4ea;
-}
-
-#check-out {
-  color: #d6e4ea;
-  margin: 2rem;
-  padding: 1rem;
-  text-align: center;
-}
-
-#check-out h2 {
-  letter-spacing: 0.3rem;
-}
-
-#check-out i {
-  color: #d6e4ea;
-  font-size: 3rem;
-  margin: 3rem;
-}
-
-@media screen and (min-width: 768px) {
-  .jumbotron {
-    background: -webkit-gradient(linear, left top, right top, from(#3204fde6), to(#9907fae6)), url("../../images/main-jumbo_1200px.jpg") no-repeat center;
-    background: linear-gradient(to right, #3204fde6, #9907fae6), url("../../images/main-jumbo_1200px.jpg") no-repeat center;
-    background-size: cover;
-    height: 100vh;
-  }
-  .jumbotron nav a {
-    font-size: 1.65rem;
-  }
-  .flex {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
+footer i {
+  padding: var(--my-padding);
+  margin: 1rem;
+  font-size: var(--h4-font-size);
 }
 /*# sourceMappingURL=style.css.map */

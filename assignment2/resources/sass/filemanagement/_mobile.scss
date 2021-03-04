@@ -1,5 +1,27 @@
+:root {
+    /* Main content width */
+    --section-width: 80%;
+
+    /* Typefont Scaling */
+    --base-font-size: 16px;
+    --scale-factor: 1.25; 
+    --h5-font-size: calc(var(--base-font-size) * var(--scale-factor));
+    --h4-font-size: calc(var(--h5-font-size) * var(--scale-factor));
+    --h3-font-size: calc(var(--h4-font-size) * var(--scale-factor));
+    --h2-font-size: calc(var(--h3-font-size) * var(--scale-factor));
+    --h1-font-size: calc(var(--h2-font-size) * var(--scale-factor));
+    --p-font-size: calc(var(--h5-font-size) * var(--scale-factor));
+    --small-font-size: calc(var(--base-font-size) / var(--scale-factor));
+
+    /* Global Styles */
+    --my-padding: 1rem;
+    --my-margin: 1rem 1.75rem;
+    --my-border-radius: 10px;
+}
+
 html {
     box-sizing: border-box;
+    font-size: 100%;
 }
 
 *, *:before, *:after {
@@ -9,7 +31,173 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-size: 16px;
-    @include font-color($white);
+    font-size: var(--base-font-size);
+    @include font-color($purple);
 }
 
+h1 {
+    font-size: var(--h1-font-size);
+    font-family: $primary-header-font;
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+    font-family: $nav-font;
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+}
+
+h4 {
+    font-size: var(--h4-font-size);
+}
+
+h5 {
+    font-size: var(--h5-font-size);
+}
+
+p {
+    font-size: var(--p-font-size);
+    margin: var(--my-margin);
+}
+
+.small-font {
+    font-size: var(--small-font-size);
+    font-family: $light-font;
+}
+
+
+
+nav {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: var(--section-width);
+}
+
+#logo p {
+    margin: 0;
+    padding: 0;
+}
+
+#food { 
+    font-family: $cursive-font;
+    font-size: var(--h3-font-size);
+ }
+#haven { 
+    font-family: $decorative-font;
+    font-size: var(--h2-font-size);
+}
+
+#searchbar {
+    flex-basis: calc(var(--section-width) - 30%);
+    margin-left: 2rem;
+}
+
+#searchbar > input {
+    width: 100%;
+    border-radius: var(--my-border-radius);
+    height: 2.3rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+nav ul a {
+    text-decoration: none;
+    padding: var(--my-padding);
+    font-family: $nav-font;
+    margin-left: 1rem;
+    font-size: var(--h5-font-size);
+    color: $white;
+}
+
+.jumbotron {
+    background-image: url("../../images/main-jumbo_large.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+main {
+    margin: 5rem 0;
+}
+
+main, footer {
+    font-family: $serif-font;
+    color: black;
+}
+
+main section {
+    margin: 4rem auto;
+}
+
+main #about-chef {
+    width: calc(var(--section-width) - 15%);
+}
+
+section img {
+    display: block;
+    width: 360px;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+section article {
+    height: 540px;
+}
+
+#featured-recipe {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: end;
+    h1 {
+        flex-basis: 20%;
+        margin-right: 1.5rem;
+    }
+    article {
+        flex-basis: 40%;
+    }
+}
+
+#featured-img1 {
+    background-image: url("../../images/food/540x720/tacos_720x540.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#featured-img2 {
+    background-image: url("../../images/food/540x720/ceviche_540x720.JPEG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 4rem;
+}
+
+footer, footer i {
+    background-color: $purple;
+    color: $white;
+}
+
+footer i {
+    padding: var(--my-padding);
+    margin: 1rem;
+    font-size: var(--h4-font-size);
+}

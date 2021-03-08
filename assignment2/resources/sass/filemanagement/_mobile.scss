@@ -3,7 +3,7 @@
     --section-width: 80%;
 
     /* Typefont Scaling */
-    --base-font-size: 16px;
+    --base-font-size: 14px;
     --scale-factor: 1.25; 
     --h5-font-size: calc(var(--base-font-size) * var(--scale-factor));
     --h4-font-size: calc(var(--h5-font-size) * var(--scale-factor));
@@ -17,6 +17,10 @@
     --my-padding: 1rem;
     --my-margin: 1rem 1.75rem;
     --my-border-radius: 10px;
+
+    /* Flex Layout RWD 2.0 */
+    --columns: 12;
+    --width: 12;
 }
 
 html {
@@ -33,6 +37,12 @@ body {
     padding: 0;
     font-size: var(--base-font-size);
     @include font-color($purple);
+    background-color: $whiter;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 h1 {
@@ -67,14 +77,36 @@ p {
     font-family: $light-font;
 }
 
+a {
+    text-decoration: none;
+}
 
+button {
+    background-color: #8527b1;
+    border: none;
+    color: $white;
+    padding: var(--my-padding);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: var(--base-font-size);
+    margin-top: 2.5rem;
+    cursor: pointer;
+}
+
+header,
+.jumbotron,
+main,
+footer {
+    flex-basis: calc(var(--width) / var(--columns) * 100%);
+}
 
 nav {
     margin: 0 auto;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap-reverse;
     align-items: center;
-    width: var(--section-width);
+    justify-content: center;
 }
 
 #logo p {
@@ -92,12 +124,13 @@ nav {
 }
 
 #searchbar {
-    flex-basis: calc(var(--section-width) - 30%);
-    margin-left: 2rem;
+    // flex-basis: calc(var(--section-width) - 30%);
+    flex-basis: var(--section-width);
+    // margin-left: 2rem;
 }
 
 #searchbar > input {
-    width: 100%;
+    display: none;
     border-radius: var(--my-border-radius);
     height: 2.3rem;
 }
@@ -106,24 +139,38 @@ nav ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: right;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav ul li {
+    text-align: center;
+    justify-self: stretch;
+    padding: calc(var(--my-padding) / 2);
+    border: 1px solid #7d737e;
+    background-color: $purple;
 }
 
 nav ul a {
     text-decoration: none;
-    padding: var(--my-padding);
-    font-family: $nav-font;
-    margin-left: 1rem;
+    font-family: $decorative-rough-font;
+    letter-spacing: .3rem;
+    // margin-left: 1rem;
     font-size: var(--h5-font-size);
     color: $white;
 }
 
 .jumbotron {
-    background-image: url("../../images/main-jumbo_large.jpg");
-    background-position: center;
+    background-image: linear-gradient(rgba(230, 100, 101, .4), rgba(145, 152, 229, .6)),
+    url("../../images/main-jumbo_690px.jpg");
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    background-attachment: fixed;
+    max-width: 100%;
+    min-height: 500px;
 }
 
 main {
@@ -140,7 +187,7 @@ main section {
 }
 
 main #about-chef {
-    width: calc(var(--section-width) - 15%);
+    width: calc(var(--section-width) - 5%);
 }
 
 section img {
@@ -158,26 +205,31 @@ section article {
 #featured-recipe {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     align-items: center; 
-    justify-content: end;
-    h1 {
-        flex-basis: 20%;
-        margin-right: 1.5rem;
-    }
-    article {
-        flex-basis: 40%;
+}
+
+.featured-img {
+    width: 360px;
+    min-height: 360px;
+    margin-bottom: var(--my-margin);
+
+    h2 {
+        font-family: $serif-upper-font;
+        text-align: center;
+        color:rgb(240, 240, 240);
     }
 }
 
 #featured-img1 {
-    background-image: url("../../images/food/540x720/tacos_720x540.jpg");
+    background-image: linear-gradient(RGBA(134, 142, 150, .9), rgba(173, 181, 189, .2)), url("../../images/food/540x720/tacos_720x540.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #featured-img2 {
-    background-image: url("../../images/food/540x720/ceviche_540x720.JPEG");
+    background-image: linear-gradient(RGBA(134, 142, 150, .9), rgba(173, 181, 189, .2)), url("../../images/food/540x720/ceviche_540x720.JPEG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

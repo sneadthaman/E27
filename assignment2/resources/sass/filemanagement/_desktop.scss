@@ -1,6 +1,10 @@
 @media (min-width: 850px) {
     :root {
         --scale-factor: 1.35;
+        --h3-font-size: calc(var(var(--h3-font-size)) * 1.1);
+    }
+    .jumbotron, main {
+        --width: 6;
     }
     nav ul li a {
         font-size: var(--h5-font-size);

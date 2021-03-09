@@ -105,6 +105,14 @@ footer {
       flex-basis: calc(var(--width) / var(--columns) * 100%);
 }
 
+aside {
+  border: 1px solid red;
+}
+
+aside img {
+  text-align: center;
+}
+
 nav {
   margin: 0 auto;
   display: -webkit-box;
@@ -338,6 +346,10 @@ footer i {
 @media (min-width: 850px) {
   :root {
     --scale-factor: 1.35;
+    --h3-font-size: calc(var(var(--h3-font-size)) * 1.1);
+  }
+  .jumbotron, main {
+    --width: 6;
   }
   nav ul li a {
     font-size: var(--h5-font-size);

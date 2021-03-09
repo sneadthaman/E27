@@ -101,6 +101,14 @@ footer {
     flex-basis: calc(var(--width) / var(--columns) * 100%);
 }
 
+aside {
+    border: 1px solid red;
+}
+
+aside img {
+    text-align: center;
+}
+
 nav {
     margin: 0 auto;
     display: flex;

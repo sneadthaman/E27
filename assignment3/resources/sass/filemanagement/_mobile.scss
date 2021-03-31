@@ -1,0 +1,263 @@
+:root {
+    /* Main content width */
+    --section-width: 80%;
+
+    /* Typefont Scaling */
+    --base-font-size: 14px;
+    --scale-factor: 1.25; 
+    --h5-font-size: calc(var(--base-font-size) * var(--scale-factor));
+    --h4-font-size: calc(var(--h5-font-size) * var(--scale-factor));
+    --h3-font-size: calc(var(--h4-font-size) * var(--scale-factor));
+    --h2-font-size: calc(var(--h3-font-size) * var(--scale-factor));
+    --h1-font-size: calc(var(--h2-font-size) * var(--scale-factor));
+    --p-font-size: calc(var(--h5-font-size) * var(--scale-factor));
+    --small-font-size: calc(var(--base-font-size) / var(--scale-factor));
+
+    /* Global Styles */
+    --my-padding: 1rem;
+    --my-margin: 1rem 1.75rem;
+    --my-border-radius: 10px;
+
+    /* Flex Layout RWD 2.0 */
+    --columns: 12;
+    --width: 12;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: var(--base-font-size);
+    @include font-color($purple);
+    background-color: $whiter;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+    font-family: $primary-header-font;
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+    font-family: $nav-font;
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+}
+
+h4 {
+    font-size: var(--h4-font-size);
+}
+
+h5 {
+    font-size: var(--h5-font-size);
+}
+
+p {
+    font-size: var(--p-font-size);
+    margin: var(--my-margin);
+}
+
+.small-font {
+    font-size: var(--small-font-size);
+    font-family: $light-font;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: #8527b1;
+    border: none;
+    color: $white;
+    padding: var(--my-padding);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: var(--base-font-size);
+    margin-top: 2.5rem;
+    cursor: pointer;
+}
+
+header,
+.jumbotron,
+main,
+footer {
+    flex-basis: calc(var(--width) / var(--columns) * 100%);
+}
+
+aside {
+    border: 1px solid red;
+}
+
+aside img {
+    text-align: center;
+}
+
+nav {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo p {
+    margin: 0;
+    padding: 0;
+}
+
+#food { 
+    font-family: $cursive-font;
+    font-size: var(--h3-font-size);
+ }
+#haven { 
+    font-family: $decorative-font;
+    font-size: var(--h2-font-size);
+}
+
+#searchbar {
+    // flex-basis: calc(var(--section-width) - 30%);
+    flex-basis: var(--section-width);
+    // margin-left: 2rem;
+}
+
+#searchbar > input {
+    display: none;
+    border-radius: var(--my-border-radius);
+    height: 2.3rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav ul li {
+    text-align: center;
+    justify-self: stretch;
+    padding: calc(var(--my-padding) / 2);
+    border: 1px solid #7d737e;
+    background-color: $purple;
+}
+
+nav ul a {
+    text-decoration: none;
+    font-family: $decorative-rough-font;
+    letter-spacing: .3rem;
+    // margin-left: 1rem;
+    font-size: var(--h5-font-size);
+    color: $white;
+}
+
+.jumbotron {
+    background-image: linear-gradient(rgba(230, 100, 101, .4), rgba(145, 152, 229, .6)),
+    url("../../images/main-jumbo_690px.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 100%;
+    min-height: 500px;
+}
+
+main {
+    margin: 5rem 0;
+}
+
+main, footer {
+    font-family: $serif-font;
+    color: black;
+}
+
+main section {
+    margin: 4rem auto;
+}
+
+main #about-chef {
+    width: calc(var(--section-width) - 5%);
+}
+
+section img {
+    display: block;
+    width: 360px;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+section article {
+    height: 540px;
+}
+
+#featured-recipe {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.featured-img {
+    width: 360px;
+    min-height: 360px;
+    margin-bottom: var(--my-margin);
+
+    h2 {
+        font-family: $serif-upper-font;
+        text-align: center;
+        color:rgb(240, 240, 240);
+    }
+}
+
+#featured-img1 {
+    background-image: linear-gradient(RGBA(134, 142, 150, .9), rgba(173, 181, 189, .2)), url("../../images/food/540x720/tacos_720x540.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#featured-img2 {
+    background-image: linear-gradient(RGBA(134, 142, 150, .9), rgba(173, 181, 189, .2)), url("../../images/food/540x720/ceviche_540x720.JPEG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 4rem;
+}
+
+footer, footer i {
+    background-color: $purple;
+    color: $white;
+}
+
+footer i {
+    padding: var(--my-padding);
+    margin: 1rem;
+    font-size: var(--h4-font-size);
+}

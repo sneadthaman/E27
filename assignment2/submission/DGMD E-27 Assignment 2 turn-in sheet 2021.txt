@@ -117,5 +117,7 @@ ABOVE AND BEYOND (10 POINTS)
 Identify what you did for Above and Beyond. Provide any relevant HTML, CSS, or Sass line number(s) and explanation of what you did. How many points do you think this was worth, and why?
 Honestly, I struggled to refactor my code from Assignment 1, which was lackluster. I spent a good amount of time improving the overall aesthetic and I found myself "hacking" together the assignment requirements. However, in doing that, I stumbled across a happy accident by changing the --width variable in the _desktop.scss media query that places my main content alongside a parallax image. I think the desktop version of this site is really neat! The font choices also work well, especially the 'Food Haven' logo. There are a lot of good design decisions that I believe should be worth at least 5 points. 
 
+FYI - I do have many of these recipes/blogs written out which will hopefully come in handy for creating print-ready styles in the future.
+
 
 SUGGESTED: Integrate all of your layout and typography with similar variables. In other words, in the media queries, change the values of as few variables as possible to modify column layouts, padding, margin, and type scale.

@@ -1,0 +1,36 @@
+@media (min-width: 725px) {
+    nav {
+        width: var(--section-width);
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    nav ul {
+        flex-direction: row;
+        width: 40%;
+        flex-wrap: nowrap;
+        li a {
+            font-size: var(--base-font-size);
+        }
+    }
+    #searchbar > input {
+        display: inline-block;
+    }
+    #searchbar {
+        flex-basis: 40%;
+        margin-left: 1rem;
+        align-self: center;
+    }
+    #searchbar input {
+        width: 100%;
+    }
+    .jumbotron {
+        background-image: linear-gradient(rgba(230, 100, 101, .4), rgba(145, 152, 229, .6)),
+    url("../../images/main-jumbo_1200px.jpg");
+        background-size: stretch;
+        min-height: 750px;
+    }
+    .featured-img {
+        width: 480px;
+        min-height: 480px;
+    }
+}

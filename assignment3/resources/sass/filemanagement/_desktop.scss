@@ -1,0 +1,26 @@
+@media (min-width: 850px) {
+    :root {
+        --scale-factor: 1.35;
+        --h3-font-size: calc(var(var(--h3-font-size)) * 1.1);
+    }
+    .jumbotron, main {
+        --width: 6;
+    }
+    nav ul li a {
+        font-size: var(--h5-font-size);
+        &:hover {
+            background-color: $white;
+            color: $purple;
+        }
+    }
+    .featured-img {
+        width: 540px;
+        min-height: 540px;
+    }
+    .jumbotron {
+        background-image: linear-gradient(rgba(230, 100, 101, .4), rgba(145, 152, 229, .6)),
+        url("../../images/main-jumbo_1200px.jpg");
+        background-size: cover;
+        min-height: 850px;
+    }
+}

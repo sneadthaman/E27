@@ -1,0 +1,123 @@
+﻿DGMD E-27 Assignment 2
+Your name: Sam Janvey
+
+
+1.  Provide a link to the first page of your website: http://e27p2.samjanvey.com
+
+
+My site looks the way I want on (choose one):  PC
+
+
+With this browser (choose one): Firefox
+
+
+PART 1: RWD 2.0 WEBSITE (30 points)
+Requirements may be combined with part 2
+
+
+1.  Indicate 2 custom properties whose values change with media queries.
+
+
+OUTSIDE THE MQ
+Sass partial file name: _mobile.scss
+a.  Line number for variable #1: 7
+b.  Line number for variable #2: 10
+
+
+INSIDE THE MQ
+Sass partial file name: _desktop.scss
+a.  Line number for variable #1: 3
+b.  Line number for variable #2: 4
+
+
+2. At least one occurence of calc
+Sass partial file name: _mobile.scss
+Line number: 151
+
+
+
+
+WARNING: while you may not document EVERY instance of custom properties
+and calc, we expect to see SEVERAL instances in your code.
+We expect at least 1 media query.
+We expect good Sass integration, using principles described in class.
+Use semantic HTML, a mix of CSS selectors, and valid HTML and CSS.
+We expect you to follow RWD 2.0 principles as discussed in class.
+PART 2: RWD 2.0 layout (30 points)
+Requirements may be combined with part 1
+
+
+I used which method with layout:   Flexbox
+
+
+Starting line number for layouts: _mobile.scss line 97-102
+
+
+Line number(s) for media query(ies) where CSS variable value(s) for layouts change: _desktop.scss line 6
+
+
+NOTE: We do not want you to copy the layout formula from class and stick it in this assignment. Try something different! Work with Grid, or work with a different formula for Flexbox.
+
+
+PART 3: TYPOGRAPHY  (30 points)
+Part A: Font choices
+5. Which fonts did you choose?
+Font name #1: Parisienne
+Font name #2: Monoton
+(list any additional if needed)
+
+
+6. What type of font are you using (Oldstyle, Modern, etc)?
+Font #1: Script
+Font #2: Decorative
+(list additional if needed)
+
+
+7. What type of relationship do you have between your fonts? Why does it work?
+I believe the fonts work in contrast to each other because of their stark differences. The elegant cursive font sits calmly above the big and bold decorative font to make the logo for the food blog 'pop'. The cursive style font is almost weightless in contrast to the multi-lined girth that makes up the second word in the logo. It is very interesting to look at and is very pleasent on the eye.
+
+Part B: Responsive typography and type scales
+8. What is the name of the type scale used outside the media query?
+Major-third
+
+Where did you get this scale from? (URL)
+https://type-scale.com/
+
+9. What changes did you make to the type scale inside the media query?
+(Describe the changes in English.)
+I changed the variable labeled --scale-factor from 1.25 to 1.35 inside of the _desktop.scss media query (min-width: 850px). I felt that the font sizes needed to be larger on larger screens and after experimenting with various factors, 1.35 seemed to work the best to my eye. 
+
+
+10. Identify the variables used in the type scale, where those variables are used outside the media query, and where the variable(s) change inside the media query. (This does not need to be exhaustive - identify 1 or 2 variables and trace them through your code.)
+
+
+Sass partial file name: _mobile.scss
+
+
+Line number(s) where variables are defined and variable name(s): 5-14
+
+
+Where were the variable(s) used outside the media query?
+
+
+Partial file name (if different): _mobile.scss
+
+
+Line number(s): 48-78
+
+
+Where did the variable(s) value(s) change inside the media query?
+
+
+Partial file name (if different): _desktop.scss
+
+
+Line number(s): 3
+ABOVE AND BEYOND (10 POINTS)
+Identify what you did for Above and Beyond. Provide any relevant HTML, CSS, or Sass line number(s) and explanation of what you did. How many points do you think this was worth, and why?
+Honestly, I struggled to refactor my code from Assignment 1, which was lackluster. I spent a good amount of time improving the overall aesthetic and I found myself "hacking" together the assignment requirements. However, in doing that, I stumbled across a happy accident by changing the --width variable in the _desktop.scss media query that places my main content alongside a parallax image. I think the desktop version of this site is really neat! The font choices also work well, especially the 'Food Haven' logo. There are a lot of good design decisions that I believe should be worth at least 5 points. 
+
+FYI - I do have many of these recipes/blogs written out which will hopefully come in handy for creating print-ready styles in the future.
+
+
+SUGGESTED: Integrate all of your layout and typography with similar variables. In other words, in the media queries, change the values of as few variables as possible to modify column layouts, padding, margin, and type scale.

@@ -1,0 +1,26 @@
+{
+    "@context": "https://schema.org/Recipe",
+    "@type": "Recipe",
+    "description": "Peruvian Style Ceviche",
+    "image": "https://res.cloudinary.com/dewlg7mbg/image/upload/v1617414097/ceviche_540x720_lzie9r.jpg",
+    "recipeIngredient": [
+        "4 Fish Filets",
+        "2 cloves finely chopped garlic",
+        "1 finely chopped Aji Limo chile",
+        "Fresh juice of about 12-15 lemons",
+        "Handful of roughly chopped cilantro",
+        "Ice Cubes",
+        "1 finely sliced red onion",
+        "Salt and pepper",
+        "1 can of corn, drained",
+        "1 sweet potato"
+    ],
+    "name": "Peruvian Style Ceviche",
+    "recipeInstructions": [
+        "Cut fish filets into 1-inch cubes",
+        "Add garlic and Aji Limo",
+        "Pour lemon juice, chopped cilantro",
+        "Add red onion"
+    ],
+    "recipeYield": "4 servings"
+}

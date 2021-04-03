@@ -1,0 +1,95 @@
+﻿DGMD E-27 Assignment 3
+Your name: Sam Janvey
+
+
+1.  Provide a link to the first page of your website:
+
+
+My site looks the way I want on (choose one): Mac  PC
+
+
+With this browser (choose one): Firefox Chrome
+
+
+To test printing, use this browser:   Firefox    Chrome
+
+
+Test using:    Print preview     Save to PDF
+
+
+PART 1: Advanced media queries (15 points)
+ incorporate at least two types of advanced media queries. 
+* And, not, or (comma-separated) queries 
+* Queries that target devices (phones, tablets, desktop) 
+* Queries that don't use width or height as tests
+Media queries that you may use, but that don't count towards this requirement:
+* Anything having to do with print - this is counted in part 2.
+* A media query using and, not, or with a media type, i.e.   @media screen and (min-width: 500px) -- c'mon, you can do better than this. Stretch further.
+* Queries using width and height tests.
+Suggestion: Change values of CSS variables when incorporating these queries.
+
+
+CSS/Sass line number for MQ #1: 
+Brief description of what it does:
+
+
+
+
+CSS/Sass line number for MQ #2: 
+Brief description of what it does:
+PART 2: Print Styling (45 points)
+
+
+My print styling works with this paper:    8.5 x 11”    A4
+
+
+URL for page with extended text: 
+
+
+Choose 3 of the following techniques and indicate line numbers in CSS/Sass where they are demonstrated:
+* Widows and/or orphans
+* Hyphenation
+* Page margins and layouts
+* Printing URLs next to links
+* Fragmentation/page breaks
+* Print-only information that is not visible on screens
+
+
+
+
+Technique #1:
+CSS/Sass line number:
+
+
+Technique #2:
+CSS/Sass line number:
+
+
+Technique #3:
+CSS/Sass line number:
+
+
+URL for page containing the image that was changed in print: 
+
+
+PART 3: Rich search and social media  (30 points)
+Part A: Rich search
+Which type of rich search result did you choose?
+
+
+On which page is this demonstrated?
+
+
+Link to JSON-LD:
+Part B: Social media
+
+
+URL for page containing your social media integration:
+ABOVE AND BEYOND (10 POINTS)
+Identify what you did for Above and Beyond. Provide any relevant HTML, CSS, or Sass line number(s) and explanation of what you did. How many points do you think this was worth, and why?
+
+
+Suggestions:
+* Consider marking up a page or part of a page using microdata. This should not be combined with the rich search result information in part 2.
+* Go way beyond on the print stylesheets, creating something wildly different in print. (Think about when you print tickets, shipping labels, etc.)
+* We are always open to other ideas.

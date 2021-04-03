@@ -1,0 +1,117 @@
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    --columns: 12;
+    --width: 12;
+    flex-basis: calc(var(--width) / var(--columns) * 100%);
+}
+
+article h1 {
+    padding: 1rem;
+    text-align: center;
+}
+
+article h2 {
+    margin: 2.25rem 1rem;
+    border-top: 1px solid grey;
+    width: 50%;
+}
+
+article p {
+    color: black;
+}
+
+article img {
+    max-width: 100%;
+}
+
+aside {
+    margin: .5rem;
+    font-style: italic;
+}
+
+article ul, article ol {
+    line-height: 2rem;
+    font-size: 1.25rem;
+}
+
+@media screen and (orientation: landscape) {
+    article h2 {
+        width: 100%; 
+    }
+
+    aside {
+        font-size: 1.2rem;
+        color: red;
+    }
+}
+
+@media (hover) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main section {
+        --width: 6;
+    }
+}
+
+@media (hover) and (min-width: 568px) {
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        --width: 12;
+    }
+
+    main section {
+        flex-basis: 50%;
+        align-self: center;
+    }
+
+    main aside {
+        order: 3;
+    }
+
+    #directions {
+        font-weight: bold;
+    }
+}
+
+@media print {
+    nav ul, nav #searchbar, img, footer {
+        display: none;
+    }
+
+    body {
+        color: black;
+    }
+
+    article {
+        display: inline-block;
+    }
+
+    main {
+        display: inline-block;
+    }
+
+    main section {
+        --width: 12;
+    }
+
+    h2 {
+        break-before: page;
+    }
+
+    article::after {
+        content: "Sam Janvey, 2021. Thank you for visiting!";
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    
+}

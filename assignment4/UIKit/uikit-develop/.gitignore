@@ -1,6 +1,6 @@
 /dist/*
-!/dist/css/
-/dist/css/*
+# !/dist/css/
+# /dist/css/*
 !/dist/css/uikit.css
 !/dist/css/uikit.min.css
 !/dist/css/uikit-rtl.css

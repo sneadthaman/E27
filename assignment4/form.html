@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./UIKit/uikit-develop/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="./UIKit/uikit-develop/dist/css/my-scss.css" />
     <script src="./UIKit/uikit-develop/dist/js/uikit.min.js"></script>
     <script src="./UIKit/uikit-develop/dist/js/uikit-icons.min.js"></script>
 </head>
@@ -19,9 +20,9 @@
                 <a href="index.html" class="uk-logo"><img class="uk-position-small uk-position-top-left"
                         data-src="./images/lanco_logo2.png" width="160px" data-uk-img alt="Lanco Pool Services" /></a>
                 <!-- Mobile Nav -->
-                <nav class="uk-nav uk-position-top-right">
-                    <a href="#offcanvas-slide" class="uk-button uk-button-default uk-align-right" uk-icon="icon: menu"
-                        uk-toggle></a>
+                <nav class="uk-nav uk-position-top-right uk-hidden@s">
+                    <a href="#offcanvas-slide" class="uk-button uk-button-default uk-align-right"
+                        uk-icon="icon: menu; ratio: 2" uk-toggle id="mobile-menu"></a>
 
                     <div id="offcanvas-slide" uk-offcanvas>
                         <div class="uk-offcanvas-bar">
@@ -38,6 +39,29 @@
                             </ul>
 
                         </div>
+                    </div>
+                </nav>
+
+                <!-- Tablet and larger Nav -->
+                <nav class="uk-nav uk-visible@s uk-position-top-right">
+
+                    <div class="uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+                        <ul class="uk-navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="uk-active"><a href="form.html">Contact</a></li>
+                            <li>
+                                <a href="#">Services</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li><a href="#">Seasonal Maintenance</a></li>
+                                        <li><a href="#">Design</a></li>
+                                        <li><a href="#">Construction</a></li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">Pay My Bill</a></li>
+                        </ul>
                     </div>
                 </nav>
 

@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./UIKit/uikit-develop/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="./UIKit/uikit-develop/dist/css/my-scss.css" />
     <script src="./UIKit/uikit-develop/dist/js/uikit.min.js"></script>
     <script src="./UIKit/uikit-develop/dist/js/uikit-icons.min.js"></script>
 </head>
@@ -18,10 +19,11 @@
 
                 <a href="index.html" class="uk-logo"><img class="uk-position-small uk-position-top-left"
                         data-src="./images/lanco_logo2.png" width="160px" data-uk-img alt="Lanco Pool Services" /></a>
+
                 <!-- Mobile Nav -->
-                <nav class="uk-nav uk-position-top-right">
-                    <a href="#offcanvas-slide" class="uk-button uk-button-default uk-align-right" uk-icon="icon: menu"
-                        uk-toggle></a>
+                <nav class="uk-nav uk-position-top-right uk-hidden@s">
+                    <a href="#offcanvas-slide" class="uk-button uk-button-default uk-align-right"
+                        uk-icon="icon: menu; ratio: 2" uk-toggle id="mobile-menu"></a>
 
                     <div id="offcanvas-slide" uk-offcanvas>
                         <div class="uk-offcanvas-bar">
@@ -41,11 +43,33 @@
                     </div>
                 </nav>
 
+                <!-- Tablet and larger Nav -->
+                <nav class="uk-nav uk-visible@s uk-position-top-right">
+
+                    <div class="uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-active"><a href="#">Home</a></li>
+                            <li><a href="form.html">Contact</a></li>
+                            <li>
+                                <a href="#">Services</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li><a href="#">Seasonal Maintenance</a></li>
+                                        <li><a href="#">Design</a></li>
+                                        <li><a href="#">Construction</a></li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">Pay My Bill</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
                 <a href="form.html" class="uk-button uk-button-primary">Get Free Quote</a>
 
                 <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
-                    <h3>Lanco Pool Services</h3>
-                    <p>Call us today <a href="tel:6314748064">631-474-8064</a></p>
+                    <h1 class="sj-funky-text">Call us today <a href="tel:6314748064">631-474-8064</a></h1>
                 </div>
             </div>
         </div>
@@ -54,6 +78,7 @@
     </header>
 
     <main class="uk-container uk-flex uk-flex-column uk-flex-center">
+        <img data-src="./images/lanco_logo.png" alt="Lanco Pools" data-uk-img />
         <a href="form.html" class="uk-button uk-button-primary uk-position-small">Contact us Today</a>
         <section class="uk-section">
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slideshow>

@@ -2,19 +2,19 @@
 Your name: Sam Janvey
 
 
-1.  Provide a link to the first page of your website:
+1.  Provide a link to the first page of your website: http://e27p3.samjanvey.com/recipes/ceviche.html
 
 
-My site looks the way I want on (choose one): Mac  PC
+My site looks the way I want on (choose one):  PC
 
 
-With this browser (choose one): Firefox Chrome
+With this browser (choose one): Firefox
 
 
-To test printing, use this browser:   Firefox    Chrome
+To test printing, use this browser:   Firefox
 
 
-Test using:    Print preview     Save to PDF
+Test using:    Print preview
 
 
 PART 1: Advanced media queries (15 points)
@@ -29,21 +29,21 @@ Media queries that you may use, but that don't count towards this requirement:
 Suggestion: Change values of CSS variables when incorporating these queries.
 
 
-CSS/Sass line number for MQ #1: 
+CSS/Sass line number for MQ #1: resources/recipe.css Line 39
 Brief description of what it does:
+Testing for a device with a screen that is also in landscape mode and simply stretches the H2 headers across the screen 100%.
 
 
 
-
-CSS/Sass line number for MQ #2: 
-Brief description of what it does:
+CSS/Sass line number for MQ #2:  resources/recipe.css Line 50
+Brief description of what it does: Tests for any device with hover capabilities and changes the flex direction from row to column and adjusts the global width variable in half.
 PART 2: Print Styling (45 points)
 
 
-My print styling works with this paper:    8.5 x 11”    A4
+My print styling works with this paper:    8.5 x 11”
 
 
-URL for page with extended text: 
+URL for page with extended text: http://e27p3.samjanvey.com/recipes/ceviche.html
 
 
 Choose 3 of the following techniques and indicate line numbers in CSS/Sass where they are demonstrated:
@@ -57,37 +57,38 @@ Choose 3 of the following techniques and indicate line numbers in CSS/Sass where
 
 
 
-Technique #1:
-CSS/Sass line number:
+Technique #1: Printing URLs next to links
+CSS/Sass line number: resources/recipe.css line 113-114
 
 
-Technique #2:
-CSS/Sass line number:
+Technique #2: Fragmentation/page breaks
+CSS/Sass line number: resources/recipe.css line 106
 
 
-Technique #3:
-CSS/Sass line number:
+Technique #3: Print-only information that is not visible on screens
+CSS/Sass line number: resources/recipe.css line 110
 
 
-URL for page containing the image that was changed in print: 
+URL for page containing the image that was changed in print: http://e27p3.samjanvey.com/recipes/ceviche.html
 
 
 PART 3: Rich search and social media  (30 points)
 Part A: Rich search
 Which type of rich search result did you choose?
-
+https://schema.org/Recipe
 
 On which page is this demonstrated?
+http://e27p3.samjanvey/recipes/ceviche.html
 
-
-Link to JSON-LD:
+Link to JSON-LD: resources/js/jsonld.json
 Part B: Social media
 
 
-URL for page containing your social media integration:
+URL for page containing your social media integration: http://e27p3.samjanvey.com/recipes/ceviche.html
 ABOVE AND BEYOND (10 POINTS)
 Identify what you did for Above and Beyond. Provide any relevant HTML, CSS, or Sass line number(s) and explanation of what you did. How many points do you think this was worth, and why?
 
+In addition to using the JSON-LD format for rich Google search, I also marked the page up with microdata. Another cool thing was changing the order within the <main> section of the recipe so that my <aside> appeared 3rd on all devices except mobile. 10 points
 
 Suggestions:
 * Consider marking up a page or part of a page using microdata. This should not be combined with the rich search result information in part 2.

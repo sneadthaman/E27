@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>E27 | Assignment 4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./UIKit/uikit-develop/dist/css/uikit.min.css" />
+    <script src="./UIKit/uikit-develop/dist/js/uikit.min.js"></script>
+    <script src="./UIKit/uikit-develop/dist/js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <div class="uk-background-cover uk-height-large uk-panel uk-flex uk-flex-center uk-flex-middle"
+                data-src="./images/dark-pool.jpg" data-srcset="./images/dark-pool.jpg" data-uk-img>
+
+                <a href="index.html" class="uk-logo"><img class="uk-position-small uk-position-top-left"
+                        data-src="./images/lanco_logo2.png" width="160px" data-uk-img alt="Lanco Pool Services" /></a>
+                <!-- Mobile Nav -->
+                <nav class="uk-nav uk-position-top-right">
+                    <a href="#offcanvas-slide" class="uk-button uk-button-default uk-align-right" uk-icon="icon: menu"
+                        uk-toggle></a>
+
+                    <div id="offcanvas-slide" uk-offcanvas>
+                        <div class="uk-offcanvas-bar">
+
+                            <ul class="uk-nav uk-nav-default">
+                                <li><a href="index.html">Home</a></li>
+                                <li class="uk-active"><a href="form.html">Contact</a></li>
+                                <li class="uk-nav-header">Services</li>
+                                <li><a href="#">Seasonal Maintenance</a></li>
+                                <li><a href="#">Design</a></li>
+                                <li><a href="#">Construction</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#">Pay My Bill</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                    <h3>Let Us Know What You Are Looking For</h3>
+                    <p>Call us today <a href="tel:6314748064">631-474-8064</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="uk-section uk-container">
+        <form class="uk-form-stacked" method="POST" action="/action_page.php">
+            <fieldset class="uk-fieldset">
+                <legend class="uk-legend">About You
+                </legend>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="firstName">First Name*</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" type="text" id="firstName" name="firstName" />
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="lastName">Last Name*</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" type="text" id="lastName" name="lastName" />
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="email">Email*</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" type="email" id="email" name="email" />
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="phone">Phone</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" type="tel" id="phone" name="phone" />
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="uk-fieldset">
+                <legend class="uk-legend">About Your Pool</legend>
+                <div class="uk-margin">
+                    <p>I am looking for...</p>
+                    <div class="uk-form-controls">
+                        <input class="uk-checkbox" type="checkbox" id="seasonal-maint" name="seasonal-maint"
+                            value="Seasonal" />
+                        <label class="uk-form-label" for="seasonal-maint">Seasonal Maintenance</label>
+                    </div>
+                    <div class="uk-form-controls">
+                        <input class="uk-checkbox" type="checkbox" id="new-const" name="new-const" value="NewConst" />
+                        <label class="uk-form-label" for="new-const">New Construction</label>
+                    </div>
+                    <div class="uk-form-controls">
+                        <input class="uk-checkbox" type="checkbox" id="repair" name="repair" value="Repair" />
+                        <label class="uk-form-label" for="repair">Minor/Major Repair</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <button class="uk-button uk-button-primary uk-width-1-1 uk-margin" type="button">Submit</button>
+        </form>
+    </section>
+
+    <footer class="uk-section uk-section-secondary uk-padding uk-margin-top">
+        <p class="uk-text-italic uk-text-center">Licensed &amp; Insured</p>
+        <h4>Lanco Pool Services</h4>
+        <address>
+            <p>617 N. Bicycle Path #7</p>
+            <p><span>Port Jefferson Sta. </span><span>NY </span><span>11776</span></p>
+            <a href="tel:6314748064">(631) 474-8064</a>
+        </address>
+    </footer>
+</body>
+
+</html>

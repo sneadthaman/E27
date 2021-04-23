@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lanco Pool Services</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./UIKit/uikit-develop/dist/css/uikit.min.css" />
+    <script src="./UIKit/uikit-develop/dist/js/uikit.min.js"></script>
+    <script src="./UIKit/uikit-develop/dist/js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <div class="uk-background-cover uk-height-large uk-panel uk-flex uk-flex-center uk-flex-middle"
+                data-src="./images/dark-pool.jpg" data-srcset="./images/dark-pool.jpg" data-uk-img>
+
+                <a href="index.html" class="uk-logo"><img class="uk-position-small uk-position-top-left"
+                        data-src="./images/lanco_logo2.png" width="160px" data-uk-img alt="Lanco Pool Services" /></a>
+                <!-- Mobile Nav -->
+                <nav class="uk-nav uk-position-top-right">
+                    <a href="#offcanvas-slide" class="uk-button uk-button-default uk-align-right" uk-icon="icon: menu"
+                        uk-toggle></a>
+
+                    <div id="offcanvas-slide" uk-offcanvas>
+                        <div class="uk-offcanvas-bar">
+
+                            <ul class="uk-nav uk-nav-default">
+                                <li class="uk-active"><a href="#">Home</a></li>
+                                <li><a href="form.html">Contact</a></li>
+                                <li class="uk-nav-header">Services</li>
+                                <li><a href="#">Seasonal Maintenance</a></li>
+                                <li><a href="#">Design</a></li>
+                                <li><a href="#">Construction</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#">Pay My Bill</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
+
+                <a href="form.html" class="uk-button uk-button-primary">Get Free Quote</a>
+
+                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                    <h3>Lanco Pool Services</h3>
+                    <p>Call us today <a href="tel:6314748064">631-474-8064</a></p>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+    <main class="uk-container uk-flex uk-flex-column uk-flex-center">
+        <a href="form.html" class="uk-button uk-button-primary uk-position-small">Contact us Today</a>
+        <section class="uk-section">
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slideshow>
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <img src="./images/daytime-pool.jpg" alt="Daytime Pool" uk-cover>
+                    </li>
+                    <li>
+                        <img src="./images/infinity-pool.jpg" alt="Infinity Pool" uk-cover>
+                    </li>
+                </ul>
+
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                    uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                    uk-slideshow-item="next"></a>
+            </div>
+        </section>
+
+        <section class="uk-section uk-grid-divider uk-child-width-1-3@m uk-text-center" data-uk-grid>
+            <div>
+                <h3 class="uk-card-title">Seasonal Maintenance</h3>
+                <ul class="uk-list">
+                    <li>Pool Openings / Closings</li>
+                    <li>Repairs &amp; Maintenance</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="uk-card-title">Design</h3>
+                <ul class="uk-list">
+                    <li>Traditional shapes ("L", rectangle) or Custom</li>
+                    <li>LED Lights</li>
+                    <li>Custom Pool Covers</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="uk-card-title">Construction</h3>
+                <ul class="uk-list">
+                    <li>Stainless Steel Staircases</li>
+                    <li>Custom Stone Pavers</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="uk-section uk-section-secondary uk-padding uk-margin-top">
+        <p class="uk-text-italic uk-text-center">Licensed &amp; Insured</p>
+        <h4>Lanco Pool Services</h4>
+        <address>
+            <p>617 N. Bicycle Path #7</p>
+            <p><span>Port Jefferson Sta. </span><span>NY </span><span>11776</span></p>
+            <a href="tel:6314748064">(631) 474-8064</a>
+        </address>
+    </footer>
+</body>
+
+</html>

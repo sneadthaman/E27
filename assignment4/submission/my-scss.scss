@@ -1,0 +1,32 @@
+// 1. Your custom variables and variable overwrites.
+$navbar-nav-item-color: white;
+$navbar-nav-item-active-color: #1e87f0;
+
+// 2. Import default variables and available mixins.
+@import "../scss/variables-theme.scss";
+@import "../scss/mixins-theme.scss";
+
+// 3. Your custom mixin overwrites.
+@mixin hook-base-link-hover(){
+    text-decoration: none;
+}
+
+@mixin hook-navbar-dropdown() {
+    background-color: black
+}
+
+// 4. Import UIkit.
+@import "../scss/uikit-theme.scss";
+
+// Sam's Custom Styling
+
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+
+.sj-funky-text {
+    font-family: 'Knewave', cursive;
+}
+
+#mobile-menu {
+    border: none;
+    color: white;
+}

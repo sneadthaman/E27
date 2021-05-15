@@ -1,0 +1,40 @@
+/* Flex Helper Classes */
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction:column;
+}
+
+.justify-self-end {
+    justify-self: end;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+.align-content-center {
+    align-content: center;
+}
+
+.align-content-end {
+    align-items: flex-end;
+}
+
+.align-self-end {
+    align-self: self-end;
+}

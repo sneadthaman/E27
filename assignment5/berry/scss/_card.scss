@@ -1,0 +1,79 @@
+@import 'variables.scss';
+/* ==========================================================================
+ *
+ * File Name:         Cards
+ * Description:       Visual cards that help you segment information
+ * Editing Details:   Feel free to edit padding, margins, colours, and shadow.
+ *                    Do not edit class display properties or change/eliminate classes.
+ *
+ ============================================================================ */
+//Container Spacing & Widths
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: unset;
+  width: 75%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: $card-margin;
+  padding: $card-padding;
+  position: relative;
+}
+
+.card-body {
+  padding: 4rem 1rem;
+  box-shadow: $card-box-shadow;
+
+  * {
+    margin: 0 auto;
+  }
+  &:hover {box-shadow: $card-box-shadow-hover;}
+
+  h6 {padding-top: 0rem;}
+
+}
+
+.card-default {
+  background: $card-background-default;
+}
+
+.card-primary {
+  background: $card-background-primary;
+}
+
+.card-secondary {
+  background: $card-background-secondary;
+}
+
+.card-gutter-small > div {
+  padding: $card-padding-small;
+}
+
+.card-gutter-large > div {
+  padding: $card-padding-large;
+}
+
+
+//Media Queries and responsiveness
+
+@media (min-width: map-get($breakpoints, md)) and (max-width: map-get($breakpoints, lg)){
+  .card-container {
+    width: 70%;
+  }
+}
+
+@media (min-width: map-get($breakpoints, sm)) and (max-width: map-get($breakpoints, md)){
+  .card-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: map-get($breakpoints, sm)) {
+  .card-container {
+    width: 100%;
+}
+}

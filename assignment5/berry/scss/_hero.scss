@@ -1,0 +1,36 @@
+/* ==========================================================================
+ *
+ * File Name:         Hero
+ * Description:       Simple, visual hero banner for your webpage
+ * Editing Details:   Change colours, images, and background properties as needed
+ * Use:               Add the 'hero' class and its affiliates to the section or div
+                      you want to display as the hero
+ * Affiliates:        Works with the align list of classes to set text direction
+                      of the hero text
+ ============================================================================ */
+
+.hero {
+  height: calc(100vh - #{$height-xl});
+  padding: 0rem;
+  flex-direction: column;
+
+  [class*="col-"] {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  p, h1 {
+    width: 100%;
+  }
+}
+
+.hero-img {
+  background-image: linear-gradient(145deg, map-get($accent, purple) 30%, map-get($accent, pink) 70%, map-get($accent, red) 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

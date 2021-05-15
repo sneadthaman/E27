@@ -1,0 +1,10 @@
+@import '_variables.scss';
+
+.hero {
+    width: 100%;
+    background-image: $background-image;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

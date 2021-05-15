@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Press+Start+2P&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+/* Global Variables */
+/* Change the background image to your own */
+/* Padding and Margin */
+/* set base values */
+/* type scale */
+/* line-height */
+/* Letter Spacing */
+/* Global Variables */
+/* Change the background image to your own */
+/* Padding and Margin */
+/* set base values */
+/* type scale */
+/* line-height */
+/* Letter Spacing */
+/* Utility Spacing Classes */
+.margin-top-3 {
+  margin-top: calc(1em * 3);
+}
+
+.margin-bottom-2 {
+  margin-bottom: calc(1em * 2);
+}
+
+.margin-bottom-3 {
+  margin-bottom: calc(1em * 3);
+}
+
+.padding-bottom-3 {
+  padding-bottom: calc(1em * 3);
+}
+
+.letter-spacing-2 {
+  letter-spacing: .5em;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.height-50 {
+  height: 50%;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+/* Utility file for text alignment */
+.align-center {
+  text-align: center;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+/* Colors */
+/* Main Colors */
+/* Text Colors */
+/* Component Colors */
+body {
+  background-color: var(--color-primary-bkg);
+}
+
+/* Global Variables */
+/* Change the background image to your own */
+/* Padding and Margin */
+/* set base values */
+/* type scale */
+/* line-height */
+/* Letter Spacing */
+/* Colors */
+/* Main Colors */
+/* Text Colors */
+/* Component Colors */
+body {
+  background-color: var(--color-primary-bkg);
+}
+
+/* -------------------------------- 
+Typography
+-------------------------------- */
+@font-face {
+  font-family: 'FM Pointifax A';
+  src: url("../fonts/FM Pointifax A/Alternative files/\\FontMeister - FM Pointifax A.ttf");
+}
+
+@font-face {
+  font-family: 'FM Pointifax C';
+  src: url("../fonts/FM Pointifax C/Alternative files/\\FontMeister - FM Pointifax C.ttf");
+}
+
+@font-face {
+  font-family: 'Elianto';
+  src: url("../fonts/Elianto/Elianto-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Ailerons';
+  src: url("../fonts/Ailerons/Ailerons-Regular.otf");
+}
+
+body {
+  font-size: 1em;
+  font-family: "Ailerons", monospace;
+  color: var(--color-primary);
+}
+
+h1, h2, h3, h4, form legend {
+  color: var(--color-primary);
+  margin-bottom: 1em;
+  line-height: 1.2;
+}
+
+h2, h3, h4 {
+  font-family: "Press Start 2P", monospace;
+}
+
+/* text size */
+.text-xxxl {
+  font-size: calc(1em * 1.3 * 1.3 * 1.3 * 1.3 * 1.3);
+}
+
+h1 {
+  font-size: calc(1em * 1.3 * 1.3 * 1.3 * 1.3);
+}
+
+h2 {
+  font-size: calc(1em * 1.3 * 1.3 * 1.3);
+}
+
+h3 {
+  font-size: calc(1em * 1.3 * 1.3);
+}
+
+h4 {
+  font-size: calc(1em * 1.3);
+}
+
+small {
+  font-size: calc(1em / 1.3);
+}
+
+p {
+  font-family: "Inconsolata", serif;
+  line-height: 1.4;
+}
+
+a {
+  color: #5e07aa;
+}
+
+a:visited {
+  color: #853dc9;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+/* 6 Column Grid (Flex) */
+/* Flex Helper Classes */
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.justify-self-end {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.justify-content-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.justify-content-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.align-self-center {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.align-content-center {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.align-content-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.align-self-end {
+  -ms-flex-item-align: self-end;
+      -ms-grid-row-align: self-end;
+      align-self: self-end;
+}
+
+/* Global Variables */
+/* Change the background image to your own */
+/* Padding and Margin */
+/* set base values */
+/* type scale */
+/* line-height */
+/* Letter Spacing */
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav ul li {
+  padding: 0.5em;
+  margin-left: 1em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: calc(1em * 1.3 * 1.3);
+}
+
+/* Global Variables */
+/* Change the background image to your own */
+/* Padding and Margin */
+/* set base values */
+/* type scale */
+/* line-height */
+/* Letter Spacing */
+.hero {
+  width: 100%;
+  background-image: url("../images/hero_foggy_1182x665.jpg");
+  height: 650px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+aside p {
+  background-color: var(--aside-bkg-color);
+  color: var(--aside-fg-color);
+  font-family: var(--font-aside-primary);
+  font-size: var(--text-xl);
+}
+/*# sourceMappingURL=style.css.map */

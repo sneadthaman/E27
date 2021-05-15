@@ -1,0 +1,29 @@
+@import 'variables.scss';
+
+/* ==========================================================================
+ * File Name:         Colours
+ * Description:       List of all colour utility classes
+ *
+ * Editing:           To change colours and utility class names, go to
+ *                    variables.scss and change the default values there or
+ *                    override them in the designated space in berry.scss.
+ *
+ * DO NOT change the custom function in this file as doing so may affect
+ * all class utility labels
+ *
+ * Credit: https://frontstuff.io/generate-all-your-utility-classes-with-sass-maps
+ *
+============================================================================= */
+
+
+// Color Utility Class function
+
+@each $color-name, $hsl in $accent {
+      .background-accent-#{$color-name} {
+        background-color: $hsl;
+        }
+
+      .text-accent-#{$color-name} {
+          color: $hsl;
+          }
+      }

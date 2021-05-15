@@ -1,0 +1,106 @@
+@import 'variables.scss';
+
+/* ==========================================================================
+ *
+ * File Name:         Grid
+ * Description:       Flexbox Responsive Grid
+ * Editing Details:   Do NOT modify variables or code in this file as that may
+ *                    cause Berry's responsive framework to malfunction
+ *
+ ============================================================================ */
+
+/* Border Box Model */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+// Grid/Width Utility Class generator loop + function to return width percentages
+// Credit: https://frontstuff.io/generate-all-your-utility-classes-with-sass-maps
+// Generates all grid utility classes
+
+@function calculate-flex-basis($i) {
+  @return percentage($i / $grid-col);
+}
+
+@each $breakpoint, $size in $breakpoints {
+  @media (min-width: #{$size}) {
+    @for $i from 1 through $grid-col {
+      .col-#{$i}-#{$breakpoint} {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: calculate-flex-basis($i);
+        padding: $padding-xs;
+        }
+      }
+  }
+}
+
+/* General Grid layout */
+
+//Section Spacing & Widths
+
+section {
+  display: block;
+  height: min-content;
+  position: relative;
+}
+
+
+//Container Spacing & Widths
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding: $padding-large 0s
+}
+
+.container-tall, .container-small,
+.container-medium, .container-xl, .container-large {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.container-small {
+    padding: calc(#{$padding-xl} + 1rem) 0rem;
+}
+.container-medium {
+  padding: calc(#{$padding-xl} + 2.5rem) 0rem;
+}
+.container-tall {
+  padding: calc(#{$padding-xl} + 5rem) 0rem;
+}
+.container-large {
+  padding: calc(#{$padding-xl} + 7rem) 0rem;
+}
+.container-xl {
+    padding: calc(#{$padding-xl} + 9rem) 0rem;
+}
+
+
+/* Gutter/Margin sizes */
+
+
+/* General Element Widths */
+h1, h2, h3, h4, h5, div{
+  width: 100%;
+}
+
+p, h6, img {
+  width: 90%;
+}

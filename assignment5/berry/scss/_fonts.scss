@@ -1,0 +1,160 @@
+@import 'variables.scss';
+
+/* ==========================================================================
+ * File Name:         Fonts
+ * Description:       List of all scaled font sizes and relevant spacing
+ *
+ * Fonts are set using a responsive typescale that sets font sizes along a
+   specified ratio. You can change the size of your fonts by changing the
+   multiplier map in variables.scss, by setting your own ratio as a new map key,
+   or by changing the base-font CSS variable below.
+ *
+ * For information about type scaling, read the link below:
+   https://medium.com/sketch-app-sources/exploring-responsive-type-scales-cf1da541be54
+ *
+============================================================================= */
+
+//General Font Style - Fonts and Weights
+h1, h2, h3, h4, h5, h6 {
+  font-family: $secondary-font;
+}
+
+body {
+  font-family: $primary-font;
+  font-weight: $font-light;
+}
+
+a {
+  font-family: $accent-font;
+  font-weight: $font-regular;
+  color: map-get($accent, green);
+}
+
+.accent-font {
+  font-family: $accent-font;
+}
+
+.primary-font{
+  font-family: $primary-font;
+  font-weight: $font-xbold;
+}
+
+.secondary-font{
+  font-family: $secondary-font;
+}
+
+strong {
+  font-weight: $font-bold;
+  color: map-get($accent, pink)}
+
+/* ============================================================================
+    Font Sizing
+ * ============================================================================ */
+
+/**
+  * Custom function that calculates font-sizes and takes the following parameters:
+  * @param {Number} $h-number - The number attached to your H tag (1 for H1, 2 for H2, etc)
+  *
+  */
+
+//1. Set scale - choose your modular scale multiplier from the list above
+$scale: perfect-fourth; // or a ratio of your choosing
+
+//2. Set base-font - this is your starting font-size. Doubles as the body font-size
+
+:root {
+--base-font: 1.1rem; // or your custom base-font
+}
+
+//3. Calculate font-sizes using custom function
+
+@function font-size($exponent) {
+
+  // Function variables
+  $base:  map-get($multipliers, $scale);
+  $num: 1;
+  $font-size: 1;
+  $exponent: 7-$exponent;
+
+  // Iteration loop
+    @for $i from 1 through $exponent {
+      $num: $num * $base; // Calculate base * exponent value
+      $font-size: calc(var(--base-font) * #{$num}); // Multiply it with the base font
+    }
+  @return $font-size;
+}
+
+/*
+ * Desktop Font Sizes
+ *
+ */
+
+body {font-size: var(--base-font); }
+h1 {font-size: font-size(1);}
+h2 {font-size: font-size(2);}
+h3 {font-size: font-size(3);}
+h4 {font-size: font-size(4);}
+h5 {font-size: font-size(5);}
+h6 {font-size: font-size(6);}
+
+/*
+ * Media Query Font Size: Changing typescale across breakpoints from Perfect Fourth to Major Second
+ * Tablets: 1 stop down from 1 rem
+ * Phones: 2 stops down from 1 rem
+ *
+ */
+
+@media (max-width: map-get($breakpoints, md)) {
+  :root {
+  --base-font: calc(1em / #{map-get($multipliers, major-second)});
+  }
+}
+
+@media (max-width: map-get($breakpoints, sm)) {
+  :root {
+  --base-font: calc(1em / calc(#{map-get($multipliers, major-second)} * #{map-get($multipliers, major-second)}));
+  }
+}
+
+/* ============================================================================
+    Font Spacing
+ * ============================================================================ */
+
+ /* Line Height */
+
+body * {
+  line-height: $general-line-height;
+}
+
+/* Font Bottom Margins
+ */
+
+p {
+  margin: 0 0 $margin-medium 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: $padding-medium 0;
+}
+
+.large-line-height {line-height: $large-line-height;}
+.small-line-height {line-height: calc(#{$general-line-height} - 0.2rem) !important;}
+
+
+/* ==========================================================================
+ *
+ * FONT COLOURS
+ * Default font colours for general HTML text elements
+ *
+ *
+============================================================================= */
+
+$body-font-color: $dark-grey;
+$h1-font-color: $main-grey;
+$h2-font-color: map-get($accent, purple);
+$link-font-color: map-get($accent, pink);
+$hero-font-color: $light-white;
+
+h1 {color: $h1-font-color}
+h2 {color: $h2-font-color}

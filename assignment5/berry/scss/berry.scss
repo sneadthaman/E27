@@ -1,0 +1,40 @@
+//Import Normalise
+@import 'normalise.scss';
+
+//Import all variables
+@import 'variables.scss';
+
+//Import the grid system
+@import 'grid.scss';
+
+// Import spacing functions
+@import 'spacing.scss';
+
+// Import Colour functions
+@import 'colours.scss';
+
+// Import all type scales, type settings, and type spacing
+@import 'fonts.scss';
+
+// Import navbar styles
+@import 'navbar.scss';
+
+// Import Hero image styling
+@import 'hero.scss';
+
+// Import Align classes to set content alignment
+@import 'align.scss';
+
+// Import button styling
+@import 'button.scss';
+
+// Import card styling
+@import 'card.scss';
+
+// Import custom styles
+@import 'custom-styles.scss';
+
+//Override default styles with custom ones here..
+
+
+// End of Custom Styles

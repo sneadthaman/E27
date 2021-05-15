@@ -1,0 +1,100 @@
+/* ==========================================================================
+ * File Name:         Variables
+ * Description:       List of all variables used in Berry
+ * Editing Details:   Change any variable you want to override to the values
+                      you choose and recompile this SASS file
+
+ * Note: Variables are grouped according to sections/type for ease of reference
+ ============================================================================ */
+/* ==========================================================================
+ *
+ * COLOURS
+ * True to its name, berry has a colour-scheme of fun, jewelled-toned hues
+ * To change any colours, simply swap out the current HSL values for your desired ones
+ *
+============================================================================= */
+/* ==========================================================================
+ *
+ * FONT TYPES & WEIGHTS
+ * Berry comes equipped with three Google fonts - a serif, a sans-serif, and an accent font
+ * To change any font, simple slide in your Google font code into any of the variables below
+ *
+============================================================================= */
+/* ==========================================================================
+ *
+ * HEIGHTS, PADDING & MARGIN
+ * Default height, padding and margin values
+ *
+ *
+============================================================================= */
+/* Padding */
+/* Margins */
+/* Line Height */
+/* Container Heights */
+/* ==========================================================================
+ *
+ * BUTTONS
+ * Button heights, padding, and edges
+ *
+ *
+============================================================================= */
+/* ==========================================================================
+ *
+ * File Name:         Spacing
+ * Description:       Utility Classes to add extra padding or margins
+ * Editing Details:   Do NOT modify variables or code in this file as that may
+ *                    cause Berry's responsive framework to malfunction
+ *
+ * DO NOT change the custom function in this file as doing so may affect
+ * all class utility labels
+ *
+ ============================================================================ */
+.padding-horizontal-xs {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.padding-vertical-xs {
+  padding-top: 0.25rem;
+  padding-top: 0.25rem;
+}
+
+.padding-horizontal-small {
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+
+.padding-vertical-small {
+  padding-top: 0.6rem;
+  padding-top: 0.6rem;
+}
+
+.padding-horizontal-medium {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.padding-vertical-medium {
+  padding-top: 1rem;
+  padding-top: 1rem;
+}
+
+.padding-horizontal-large {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.padding-vertical-large {
+  padding-top: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.padding-horizontal-xl {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.padding-vertical-xl {
+  padding-top: 2.5rem;
+  padding-top: 2.5rem;
+}

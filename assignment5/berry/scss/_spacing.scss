@@ -1,0 +1,27 @@
+@import 'variables.scss';
+
+/* ==========================================================================
+ *
+ * File Name:         Spacing
+ * Description:       Utility Classes to add extra padding or margins
+ * Editing Details:   Do NOT modify variables or code in this file as that may
+ *                    cause Berry's responsive framework to malfunction
+ *
+ * DO NOT change the custom function in this file as doing so may affect
+ * all class utility labels
+ *
+ ============================================================================ */
+
+ // Color Utility Class function
+
+ @each $size, $sizing in $sizes {
+    .padding-horizontal-#{$size} {
+      padding-left: $sizing;
+      padding-right: $sizing;
+    }
+
+    .padding-vertical-#{$size} {
+        padding-top: $sizing;
+        padding-bottom: $sizing;
+    }
+}

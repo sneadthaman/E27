@@ -1,0 +1,20 @@
+/* Colors */
+
+    /* Main Colors */
+$color-primary: #080e07;
+$color-primary-bkg: #fdfdfe;
+
+    /* Text Colors */
+$color-text: var(--color-primary);
+$color-text-heading: var(--color-primary);
+$color-link: #5e07aa;
+$color-link-visited: #853dc9;
+
+    /* Component Colors */
+$aside-bkg-color: #212529;
+$aside-fg-color: #7fff00;
+
+
+body {
+    background-color: var(--color-primary-bkg);
+}

@@ -1,0 +1,1205 @@
+/* ==========================================================================
+ * File Name:         Variables
+ * Description:       List of all variables used in Berry
+ * Editing Details:   Change any variable you want to override to the values
+                      you choose and recompile this SASS file
+
+ * Note: Variables are grouped according to sections/type for ease of reference
+ ============================================================================ */
+/* ==========================================================================
+ *
+ * COLOURS
+ * True to its name, berry has a colour-scheme of fun, jewelled-toned hues
+ * To change any colours, simply swap out the current HSL values for your desired ones
+ *
+============================================================================= */
+/* ==========================================================================
+ *
+ * FONT SCALES, TYPES & WEIGHTS
+ * Berry comes equipped with three Google fonts - a serif, a sans-serif, and an accent font
+ * To change any font, simple slide in your Google font code into any of the variables below
+ *
+============================================================================= */
+/* ==========================================================================
+ *
+ * HEIGHTS, PADDING & MARGIN
+ * Default height, padding and margin values
+ *
+ *
+============================================================================= */
+/* Padding */
+/* Margins */
+/* Line Height */
+/* Container Heights */
+/* ==========================================================================
+ *
+ * BUTTONS
+ * Button heights, padding, and edges
+ *
+ *
+============================================================================= */
+/* ==========================================================================
+ * File Name:         Variables
+ * Description:       List of all variables used in Berry
+ * Editing Details:   Change any variable you want to override to the values
+                      you choose and recompile this SASS file
+
+ * Note: Variables are grouped according to sections/type for ease of reference
+ ============================================================================ */
+/* ==========================================================================
+ *
+ * COLOURS
+ * True to its name, berry has a colour-scheme of fun, jewelled-toned hues
+ * To change any colours, simply swap out the current HSL values for your desired ones
+ *
+============================================================================= */
+/* ==========================================================================
+ *
+ * FONT SCALES, TYPES & WEIGHTS
+ * Berry comes equipped with three Google fonts - a serif, a sans-serif, and an accent font
+ * To change any font, simple slide in your Google font code into any of the variables below
+ *
+============================================================================= */
+/* ==========================================================================
+ *
+ * HEIGHTS, PADDING & MARGIN
+ * Default height, padding and margin values
+ *
+ *
+============================================================================= */
+/* Padding */
+/* Margins */
+/* Line Height */
+/* Container Heights */
+/* ==========================================================================
+ *
+ * BUTTONS
+ * Button heights, padding, and edges
+ *
+ *
+============================================================================= */
+/* ==========================================================================
+ *
+ * File Name:         Grid
+ * Description:       Flexbox Responsive Grid
+ * Editing Details:   Do NOT modify variables or code in this file as that may
+ *                    cause Berry's responsive framework to malfunction
+ *
+ ============================================================================ */
+/* Border Box Model */
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+@media (min-width: 560px) {
+  .col-1-sm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-preferred-size: 16.66667%;
+    flex-basis: 16.66667%;
+    padding: 0.25rem;
+  }
+  .col-2-sm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-preferred-size: 33.33333%;
+    flex-basis: 33.33333%;
+    padding: 0.25rem;
+  }
+  .col-3-sm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    padding: 0.25rem;
+  }
+  .col-4-sm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-preferred-size: 66.66667%;
+    flex-basis: 66.66667%;
+    padding: 0.25rem;
+  }
+  .col-5-sm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-preferred-size: 83.33333%;
+    flex-basis: 83.33333%;
+    padding: 0.25rem;
+  }
+  .col-6-sm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    padding: 0.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-1-md {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-preferred-size: 16.66667%;
+    flex-basis: 16.66667%;
+    padding: 0.25rem;
+  }
+  .col-2-md {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-preferred-size: 33.33333%;
+    flex-basis: 33.33333%;
+    padding: 0.25rem;
+  }
+  .col-3-md {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    padding: 0.25rem;
+  }
+  .col-4-md {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-preferred-size: 66.66667%;
+    flex-basis: 66.66667%;
+    padding: 0.25rem;
+  }
+  .col-5-md {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-preferred-size: 83.33333%;
+    flex-basis: 83.33333%;
+    padding: 0.25rem;
+  }
+  .col-6-md {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    padding: 0.25rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-1-lg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-preferred-size: 16.66667%;
+    flex-basis: 16.66667%;
+    padding: 0.25rem;
+  }
+  .col-2-lg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-preferred-size: 33.33333%;
+    flex-basis: 33.33333%;
+    padding: 0.25rem;
+  }
+  .col-3-lg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    padding: 0.25rem;
+  }
+  .col-4-lg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-preferred-size: 66.66667%;
+    flex-basis: 66.66667%;
+    padding: 0.25rem;
+  }
+  .col-5-lg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-preferred-size: 83.33333%;
+    flex-basis: 83.33333%;
+    padding: 0.25rem;
+  }
+  .col-6-lg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    padding: 0.25rem;
+  }
+}
+
+/* General Grid layout */
+section {
+  display: block;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  position: relative;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: wrap;
+  flex-direction: wrap;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1.5rem 0s;
+}
+
+.container-tall, .container-small,
+.container-medium, .container-xl, .container-large {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.container-small {
+  padding: calc(2.5rem + 1rem) 0rem;
+}
+
+.container-medium {
+  padding: calc(2.5rem + 2.5rem) 0rem;
+}
+
+.container-tall {
+  padding: calc(2.5rem + 5rem) 0rem;
+}
+
+.container-large {
+  padding: calc(2.5rem + 7rem) 0rem;
+}
+
+.container-xl {
+  padding: calc(2.5rem + 9rem) 0rem;
+}
+
+/* Gutter/Margin sizes */
+/* General Element Widths */
+h1, h2, h3, h4, h5, div {
+  width: 100%;
+}
+
+p, h6, img {
+  width: 90%;
+}
+
+/* ==========================================================================
+ * File Name:         Variables
+ * Description:       List of all variables used in Berry
+ * Editing Details:   Change any variable you want to override to the values
+                      you choose and recompile this SASS file
+
+ * Note: Variables are grouped according to sections/type for ease of reference
+ ============================================================================ */
+/* ==========================================================================
+ *
+ * COLOURS
+ * True to its name, berry has a colour-scheme of fun, jewelled-toned hues
+ * To change any colours, simply swap out the current HSL values for your desired ones
+ *
+============================================================================= */
+/* ==========================================================================
+ *
+ * FONT SCALES, TYPES & WEIGHTS
+ * Berry comes equipped with three Google fonts - a serif, a sans-serif, and an accent font
+ * To change any font, simple slide in your Google font code into any of the variables below
+ *
+============================================================================= */
+/* ==========================================================================
+ *
+ * HEIGHTS, PADDING & MARGIN
+ * Default height, padding and margin values
+ *
+ *
+============================================================================= */
+/* Padding */
+/* Margins */
+/* Line Height */
+/* Container Heights */
+/* ==========================================================================
+ *
+ * BUTTONS
+ * Button heights, padding, and edges
+ *
+ *
+============================================================================= */
+/* ==========================================================================
+ *
+ * File Name:         Spacing
+ * Description:       Utility Classes to add extra padding or margins
+ * Editing Details:   Do NOT modify variables or code in this file as that may
+ *                    cause Berry's responsive framework to malfunction
+ *
+ * DO NOT change the custom function in this file as doing so may affect
+ * all class utility labels
+ *
+ ============================================================================ */
+.padding-horizontal-xs {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.padding-vertical-xs {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.padding-horizontal-small {
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+
+.padding-vertical-small {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+.padding-horizontal-medium {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.padding-vertical-medium {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.padding-horizontal-large {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.padding-vertical-large {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.padding-horizontal-xl {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.padding-vertical-xl {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+/* ==========================================================================
+ * File Name:         Variables
+ * Description:       List of all variables used in Berry
+ * Editing Details:   Change any variable you want to override to the values
+                      you choose and recompile this SASS file
+
+ * Note: Variables are grouped according to sections/type for ease of reference
+ ============================================================================ */
+/* ==========================================================================
+ *
+ * COLOURS
+ * True to its name, berry has a colour-scheme of fun, jewelled-toned hues
+ * To change any colours, simply swap out the current HSL values for your desired ones
+ *
+============================================================================= */
+/* ==========================================================================
+ *
+ * FONT SCALES, TYPES & WEIGHTS
+ * Berry comes equipped with three Google fonts - a serif, a sans-serif, and an accent font
+ * To change any font, simple slide in your Google font code into any of the variables below
+ *
+============================================================================= */
+/* ==========================================================================
+ *
+ * HEIGHTS, PADDING & MARGIN
+ * Default height, padding and margin values
+ *
+ *
+============================================================================= */
+/* Padding */
+/* Margins */
+/* Line Height */
+/* Container Heights */
+/* ==========================================================================
+ *
+ * BUTTONS
+ * Button heights, padding, and edges
+ *
+ *
+============================================================================= */
+/* ==========================================================================
+ * File Name:         Colours
+ * Description:       List of all colour utility classes
+ *
+ * Editing:           To change colours and utility class names, go to
+ *                    variables.scss and change the default values there or
+ *                    override them in the designated space in berry.scss.
+ *
+ * DO NOT change the custom function in this file as doing so may affect
+ * all class utility labels
+ *
+ * Credit: https://frontstuff.io/generate-all-your-utility-classes-with-sass-maps
+ *
+============================================================================= */
+.background-accent-purple {
+  background-color: #7a5263;
+}
+
+.text-accent-purple {
+  color: #7a5263;
+}
+
+.background-accent-pale-purple {
+  background-color: #ccb3bd;
+}
+
+.text-accent-pale-purple {
+  color: #ccb3bd;
+}
+
+.background-accent-light-purple {
+  background-color: #efe7ea;
+}
+
+.text-accent-light-purple {
+  color: #efe7ea;
+}
+
+.background-accent-pink {
+  background-color: #d2747b;
+}
+
+.text-accent-pink {
+  color: #d2747b;
+}
+
+.background-accent-pale-pink {
+  background-color: #f8e8e9;
+}
+
+.text-accent-pale-pink {
+  color: #f8e8e9;
+}
+
+.background-accent-light-pink {
+  background-color: #fbedea;
+}
+
+.text-accent-light-pink {
+  color: #fbedea;
+}
+
+.background-accent-red {
+  background-color: #be624b;
+}
+
+.text-accent-red {
+  color: #be624b;
+}
+
+.background-accent-pale-red {
+  background-color: #cc8371;
+}
+
+.text-accent-pale-red {
+  color: #cc8371;
+}
+
+.background-accent-light-red {
+  background-color: #f4e5e1;
+}
+
+.text-accent-light-red {
+  color: #f4e5e1;
+}
+
+.background-accent-green {
+  background-color: #559175;
+}
+
+.text-accent-green {
+  color: #559175;
+}
+
+.background-accent-pale-green {
+  background-color: #f2f7f5;
+}
+
+.text-accent-pale-green {
+  color: #f2f7f5;
+}
+
+.background-accent-yellow {
+  background-color: #ebc700;
+}
+
+.text-accent-yellow {
+  color: #ebc700;
+}
+
+.background-accent-pale-yellow {
+  background-color: #ffe866;
+}
+
+.text-accent-pale-yellow {
+  color: #ffe866;
+}
+
+.background-accent-light-yellow {
+  background-color: #fffadb;
+}
+
+.text-accent-light-yellow {
+  color: #fffadb;
+}
+
+.background-accent-light-white {
+  background-color: #fdf9f8;
+}
+
+.text-accent-light-white {
+  color: #fdf9f8;
+}
+
+.background-accent-white {
+  background-color: #ffff;
+}
+
+.text-accent-white {
+  color: #ffff;
+}
+
+/* ==========================================================================
+ * File Name:         Variables
+ * Description:       List of all variables used in Berry
+ * Editing Details:   Change any variable you want to override to the values
+                      you choose and recompile this SASS file
+
+ * Note: Variables are grouped according to sections/type for ease of reference
+ ============================================================================ */
+/* ==========================================================================
+ *
+ * COLOURS
+ * True to its name, berry has a colour-scheme of fun, jewelled-toned hues
+ * To change any colours, simply swap out the current HSL values for your desired ones
+ *
+============================================================================= */
+/* ==========================================================================
+ *
+ * FONT SCALES, TYPES & WEIGHTS
+ * Berry comes equipped with three Google fonts - a serif, a sans-serif, and an accent font
+ * To change any font, simple slide in your Google font code into any of the variables below
+ *
+============================================================================= */
+/* ==========================================================================
+ *
+ * HEIGHTS, PADDING & MARGIN
+ * Default height, padding and margin values
+ *
+ *
+============================================================================= */
+/* Padding */
+/* Margins */
+/* Line Height */
+/* Container Heights */
+/* ==========================================================================
+ *
+ * BUTTONS
+ * Button heights, padding, and edges
+ *
+ *
+============================================================================= */
+/* ==========================================================================
+ * File Name:         Fonts
+ * Description:       List of all scaled font sizes and relevant spacing
+ *
+ * Fonts are set using a responsive typescale that sets font sizes along a
+   specified ratio. You can change the size of your fonts by changing the
+   multiplier map in variables.scss, by setting your own ratio as a new map key,
+   or by changing the base-font CSS variable below.
+ *
+ * For information about type scaling, read the link below:
+   https://medium.com/sketch-app-sources/exploring-responsive-type-scales-cf1da541be54
+ *
+============================================================================= */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+
+a {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+}
+
+.accent-font {
+  font-family: "Comfortaa", sans-serif;
+}
+
+.primary-font {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+}
+
+.secondary-font {
+  font-family: "Playfair Display", serif;
+}
+
+strong {
+  font-weight: 700;
+  color: #d2747b;
+}
+
+/* ============================================================================
+    Font Sizing
+ * ============================================================================ */
+/**
+  * Custom function that calculates font-sizes and takes the following parameters:
+  * @param {Number} $h-number - The number attached to your H tag (1 for H1, 2 for H2, etc)
+  *
+  */
+:root {
+  --base-font: 1.1rem;
+}
+
+/*
+ * Desktop Font Sizes
+ *
+ */
+body {
+  font-size: var(--base-font);
+}
+
+h1 {
+  font-size: calc(var(--base-font) * 5.61023);
+}
+
+h2 {
+  font-size: calc(var(--base-font) * 4.20873);
+}
+
+h3 {
+  font-size: calc(var(--base-font) * 3.15733);
+}
+
+h4 {
+  font-size: calc(var(--base-font) * 2.36859);
+}
+
+h5 {
+  font-size: calc(var(--base-font) * 1.77689);
+}
+
+h6 {
+  font-size: calc(var(--base-font) * 1.333);
+}
+
+/*
+ * Media Query Font Size: Changing typescale across breakpoints from Perfect Fourth to Major Second
+ * Tablets: 1 stop down from 1 rem
+ * Phones: 2 stops down from 1 rem
+ *
+ */
+@media (max-width: 768px) {
+  :root {
+    --base-font: calc(1em / 1.125);
+  }
+}
+
+@media (max-width: 560px) {
+  :root {
+    --base-font: calc(1em / 1.125 * 1.125);
+  }
+}
+
+/* ============================================================================
+    Font Spacing
+ * ============================================================================ */
+/* Line Height */
+body * {
+  line-height: 1.5em;
+}
+
+/* Font Bottom Margins
+ */
+p {
+  margin: 0 0 1rem 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 1rem 0;
+}
+
+/* ==========================================================================
+ *
+ * FONT COLOURS
+ * Default font colours for general HTML text elements
+ *
+ *
+============================================================================= */
+h1 {
+  color: #757072;
+}
+
+h2 {
+  color: #7a5263;
+}
+
+/* ==========================================================================
+ * File Name:         Variables
+ * Description:       List of all variables used in Berry
+ * Editing Details:   Change any variable you want to override to the values
+                      you choose and recompile this SASS file
+
+ * Note: Variables are grouped according to sections/type for ease of reference
+ ============================================================================ */
+/* ==========================================================================
+ *
+ * COLOURS
+ * True to its name, berry has a colour-scheme of fun, jewelled-toned hues
+ * To change any colours, simply swap out the current HSL values for your desired ones
+ *
+============================================================================= */
+/* ==========================================================================
+ *
+ * FONT SCALES, TYPES & WEIGHTS
+ * Berry comes equipped with three Google fonts - a serif, a sans-serif, and an accent font
+ * To change any font, simple slide in your Google font code into any of the variables below
+ *
+============================================================================= */
+/* ==========================================================================
+ *
+ * HEIGHTS, PADDING & MARGIN
+ * Default height, padding and margin values
+ *
+ *
+============================================================================= */
+/* Padding */
+/* Margins */
+/* Line Height */
+/* Container Heights */
+/* ==========================================================================
+ *
+ * BUTTONS
+ * Button heights, padding, and edges
+ *
+ *
+============================================================================= */
+/* ==========================================================================
+ *
+ * File Name:         Navbar
+ * Description:       Responsive Navigation Grid
+ * Editing Details:   Change any variable you want to override to the values
+                      you choose and recompile this SASS file
+ *
+ ============================================================================ */
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+}
+
+.navbar-logo, .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 10%;
+  flex-basis: 10%;
+  height: 5rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0.25rem;
+}
+
+.navbar-logo .nav-img, .nav-item .nav-img {
+  width: auto;
+  max-height: 60%;
+}
+
+.nav-item {
+  -ms-flex-preferred-size: 90%;
+  flex-basis: 90%;
+  padding: 0 1rem;
+}
+
+.nav-item ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0.5rem 0;
+  padding: 0;
+}
+
+.nav-item ul li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.nav-item ul li a {
+  text-decoration: none;
+  color: #7a5263;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  margin: 0 0.6rem;
+  font-weight: 400;
+}
+
+.nav-item ul li a:hover {
+  color: #be624b;
+}
+
+.nav-left {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.nav-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav-right {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+@media (max-width: 560px) {
+  .navbar {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .navbar .nav-item, .navbar .navbar-logo {
+    height: auto;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    text-align: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .navbar ul {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0.8rem 0;
+  }
+  .navbar .navbar-logo {
+    height: 4rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .navbar .navbar-logo .nav-img {
+    width: auto;
+    max-height: 70%;
+  }
+}
+
+/* ==========================================================================
+ *
+ * File Name:         Hero
+ * Description:       Simple, visual hero banner for your webpage
+ * Editing Details:   Change colours, images, and background properties as needed
+ * Use:               Add the 'hero' class and its affiliates to the section or div
+                      you want to display as the hero
+ * Affiliates:        Works with the align list of classes to set text direction
+                      of the hero text
+ ============================================================================ */
+.hero {
+  height: calc(100vh - 5rem);
+  color: white;
+  padding: 0rem;
+}
+
+.hero p {
+  width: 100%;
+}
+
+.hero-img {
+  background-image: url("images/Berry-overlay.png"), -webkit-linear-gradient(305deg, #7a5263 30%, #d2747b 70%, #be624b 100%);
+  background-image: url("images/Berry-overlay.png"), -o-linear-gradient(305deg, #7a5263 30%, #d2747b 70%, #be624b 100%);
+  background-image: url("images/Berry-overlay.png"), linear-gradient(145deg, #7a5263 30%, #d2747b 70%, #be624b 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* ==========================================================================
+ *
+ * File Name:         Align
+ * Description:       Classes to align items left or right
+ * Editing Details:   Do not change key-value pairs or variables in this file
+                      as that may alter the functionality of Berry
+ * Use:               Add the appropriate align class to any html element whose
+                      alignment you want to change
+ *
+ ============================================================================ */
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
+@media (min-width: 560px) {
+  .align-left-sm {
+    text-align: left;
+  }
+  .align-right-sm {
+    text-align: right;
+  }
+  .align-center-sm {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .align-left-md {
+    text-align: left;
+  }
+  .align-right-md {
+    text-align: right;
+  }
+  .align-center-md {
+    text-align: center;
+  }
+}
+
+/* Default alignment */
+h1, h2, h3, h4, h5, h6, p {
+  text-align: center;
+}
+
+/* ==========================================================================
+ *
+ * File Name:         Button
+ * Description:       Turnkey button styles with some cool animations
+ * Editing Details:   Change button colours in the variables.scss file
+ * Use:               Add the appropriate button class to any <a> tag that you
+                      want to style as a button
+ *
+ ============================================================================ */
+.button, .button-pill {
+  text-decoration: none;
+  padding: 0.8rem 1.8rem;
+  margin: 0.75rem 1rem;
+  font-size: 1rem;
+  background: #ebc700;
+  text-align: center;
+}
+
+.button-pill {
+  border-radius: 50px;
+}
+
+.button-default {
+  background: #ccb3bd;
+}
+
+.button-default:hover {
+  background: #a37588;
+}
+
+.button-red {
+  background: #cc8371;
+}
+
+.button-red:hover {
+  background: #be624b;
+}

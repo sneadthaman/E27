@@ -1,0 +1,203 @@
+/* ==========================================================================
+ * File Name:         Variables
+ * Description:       List of all variables used in Berry
+ * Editing Details:   Change any variable you want to override to the values
+                      you choose and recompile this SASS file
+
+ * Note: Variables are grouped according to sections/type for ease of reference
+ ============================================================================ */
+/* ==========================================================================
+ *
+ * COLOURS
+ * True to its name, berry has a colour-scheme of fun, jewelled-toned hues
+ * To change any colours, simply swap out the current HSL values for your desired ones
+ *
+============================================================================= */
+/* ==========================================================================
+ *
+ * FONT SCALES, TYPES & WEIGHTS
+ * Berry comes equipped with three Google fonts - a serif, a sans-serif, and an accent font
+ * To change any font, simple slide in your Google font code into any of the variables below
+ *
+============================================================================= */
+/* ==========================================================================
+ *
+ * HEIGHTS, PADDING & MARGIN
+ * Default height, padding and margin values
+ *
+ *
+============================================================================= */
+/* Padding */
+/* Margins */
+/* Line Height */
+/* Container Heights */
+/* ==========================================================================
+ *
+ * BUTTONS
+ * Button heights, padding, and edges
+ *
+ *
+============================================================================= */
+:root {
+  --button-font-size: 0.9rem;
+  --button-margin-top: 1em;
+  --button-margin-side: 0.75em;
+  --line-height: auto;
+}
+
+/* ==========================================================================
+ *
+ * CARDS
+ * Card colours, padding, box-shadow, and backgrounds
+ *
+ *
+============================================================================= */
+/* ==========================================================================
+ * File Name:         Colours
+ * Description:       List of all colour utility classes
+ *
+ * Editing:           To change colours and utility class names, go to
+ *                    variables.scss and change the default values there or
+ *                    override them in the designated space in berry.scss.
+ *
+ * DO NOT change the custom function in this file as doing so may affect
+ * all class utility labels
+ *
+ * Credit: https://frontstuff.io/generate-all-your-utility-classes-with-sass-maps
+ *
+============================================================================= */
+.background-accent-purple {
+  background-color: #7a5263;
+}
+
+.text-accent-purple {
+  color: #7a5263;
+}
+
+.background-accent-pale-purple {
+  background-color: #ccb3bd;
+}
+
+.text-accent-pale-purple {
+  color: #ccb3bd;
+}
+
+.background-accent-light-purple {
+  background-color: #efe7ea;
+}
+
+.text-accent-light-purple {
+  color: #efe7ea;
+}
+
+.background-accent-pink {
+  background-color: #d2747b;
+}
+
+.text-accent-pink {
+  color: #d2747b;
+}
+
+.background-accent-pale-pink {
+  background-color: #f8e8e9;
+}
+
+.text-accent-pale-pink {
+  color: #f8e8e9;
+}
+
+.background-accent-light-pink {
+  background-color: #fbedea;
+}
+
+.text-accent-light-pink {
+  color: #fbedea;
+}
+
+.background-accent-red {
+  background-color: #be624b;
+}
+
+.text-accent-red {
+  color: #be624b;
+}
+
+.background-accent-pale-red {
+  background-color: #cc8371;
+}
+
+.text-accent-pale-red {
+  color: #cc8371;
+}
+
+.background-accent-light-red {
+  background-color: #f4e5e1;
+}
+
+.text-accent-light-red {
+  color: #f4e5e1;
+}
+
+.background-accent-green {
+  background-color: #559175;
+}
+
+.text-accent-green {
+  color: #559175;
+}
+
+.background-accent-pale-green {
+  background-color: #f2f7f5;
+}
+
+.text-accent-pale-green {
+  color: #f2f7f5;
+}
+
+.background-accent-light-green {
+  background-color: #b2d2c3;
+}
+
+.text-accent-light-green {
+  color: #b2d2c3;
+}
+
+.background-accent-yellow {
+  background-color: #ebc700;
+}
+
+.text-accent-yellow {
+  color: #ebc700;
+}
+
+.background-accent-pale-yellow {
+  background-color: #ffe866;
+}
+
+.text-accent-pale-yellow {
+  color: #ffe866;
+}
+
+.background-accent-light-yellow {
+  background-color: #fffbe6;
+}
+
+.text-accent-light-yellow {
+  color: #fffbe6;
+}
+
+.background-accent-light-white {
+  background-color: #fdf9f8;
+}
+
+.text-accent-light-white {
+  color: #fdf9f8;
+}
+
+.background-accent-white {
+  background-color: #ffff;
+}
+
+.text-accent-white {
+  color: #ffff;
+}

@@ -1,0 +1,177 @@
+/* ==========================================================================
+ * File Name:         Variables
+ * Description:       List of all variables used in Berry
+ * Editing Details:   Change any variable you want to override to the values
+                      you choose and recompile this SASS file
+
+ * Note: Variables are grouped according to sections/type for ease of reference
+ ============================================================================ */
+
+//GENERAL GLOBAL VARIABLES: Breakpoints, columns
+$breakpoints: (
+  sm: 560px, //phones
+  md: 768px, //tablet
+  lg: 992px //desktop
+  //Your custom breakpoints
+);
+
+//Grid Columns
+$grid-col: 6;
+
+/* ==========================================================================
+ *
+ * COLOURS
+ * True to its name, berry has a colour-scheme of fun, jewelled-toned hues
+ * To change any colours, simply swap out the current HSL values for your desired ones
+ *
+============================================================================= */
+
+//Main font/background colours
+$main-grey: hsl(344, 2%, 45%);
+$light-grey: lighten($main-grey, 15%);
+$extra-light-grey: lighten($main-grey, 52%);
+$light-white: lighten($main-grey, 55%);
+$dark-grey: darken($main-grey, 10%);
+
+//Accent colours
+$accent: (
+  purple: hsl(335, 20%, 40%),
+  pale-purple: hsl(335, 20%, 75%),
+  light-purple: hsl(335, 20%, 92%),
+
+  pink: hsl(356, 51%, 64%),
+  pale-pink: hsl(356, 51%, 94%),
+  light-pink: hsl(11, 67%, 95%),
+
+  red: hsl(12, 47%, 52%),
+  pale-red: hsl(12, 47%, 62%),
+  light-red: hsl(12, 47%, 92%),
+
+  green: hsl(152, 26%, 45%),
+  pale-green: hsl(152, 26%, 96%),
+  light-green: hsl(152, 26%, 76%),
+
+  yellow: hsl(51, 100%, 46%),
+  pale-yellow: hsl(51, 100%, 70%),
+  light-yellow: hsl(51, 100%, 95%),
+
+  light-white: #fdf9f8,
+  white: #ffff,
+  //Your own accent colours
+
+);
+
+/* ==========================================================================
+ *
+ * FONT SCALES, TYPES & WEIGHTS
+ * Berry comes equipped with three Google fonts - a serif, a sans-serif, and an accent font
+ * To change any font, simple slide in your Google font code into any of the variables below
+ *
+============================================================================= */
+
+// Modular Typographic scales
+$multipliers: (
+    perfect-fourth: 1.333,
+    major-second: 1.125,
+    augmented-fourth: 1.414,
+    // Your custom name: ratio pair
+);
+
+$primary-font: 'Raleway', sans-serif;
+$secondary-font: 'Playfair Display', serif;
+$accent-font: 'Righteous', sans-serif;
+
+$font-light: 300;
+$font-regular: 400;
+$font-bold: 700;
+$font-xbold: 900;
+
+$hero-font-color: map-get($accent, light-white);
+
+/* ==========================================================================
+ *
+ * HEIGHTS, PADDING & MARGIN
+ * Default height, padding and margin values
+ *
+ *
+============================================================================= */
+
+/* Padding */
+
+// Size Map
+
+$sizes: (
+  xs: 0.25rem,
+  small: 0.6rem,
+  medium: 1rem,
+  large: 1.5rem,
+  xl: 2.5rem
+);
+
+$padding-xs: map-get($sizes, xs);
+$padding-small: map-get($sizes, small);
+$padding-medium: map-get($sizes, medium);
+$padding-large: map-get($sizes, large);
+$padding-xl: map-get($sizes, xl);
+
+/* Margins */
+$margin-small: $padding-small;
+$margin-medium: $padding-medium;
+$margin-large: $padding-large;
+$margin-xl: $padding-xl;
+
+/* Line Height */
+$general-line-height: 1.5em;
+$large-line-height: calc(#{$general-line-height} + 2em);
+
+/* Container Heights */
+$height-small: 1.5rem;
+$height-medium: 2.5rem;
+$height-large: 4rem;
+$height-xl: 5rem;
+$height-xxl: 6rem;
+
+/* ==========================================================================
+ *
+ * BUTTONS
+ * Button heights, padding, and edges
+ *
+ *
+============================================================================= */
+
+:root {
+  --button-font-size: 0.9rem;
+  --button-margin-top: 1em;
+  --button-margin-side: 0.75em;
+  --line-height: auto;
+}
+
+
+$button-primary-colour: map-get($accent,purple);
+$button-secondary-colour: map-get($accent,red);
+$button-tertiary-colour: map-get($accent,green);
+$button-accent-colour: map-get($accent,yellow);
+$button-white: map-get($accent,white);
+
+$button-text-light:map-get($accent,light-white);
+$button-text-dark: $main-grey;
+
+
+/* ==========================================================================
+ *
+ * CARDS
+ * Card colours, padding, box-shadow, and backgrounds
+ *
+ *
+============================================================================= */
+
+//General cards
+$card-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+$card-box-shadow-hover: 0 3px 9px rgba(0, 0, 0, 0.3);
+$card-padding: 0rem 1rem;
+$card-padding-large: 0rem 1.5rem;
+$card-padding-small: 0rem 0.5rem;
+$card-margin: 0 0 1.5rem 0;
+$card-background-default: white;
+$card-background-primary: map-get($accent, pale-purple);
+$card-background-secondary: map-get($accent, green);

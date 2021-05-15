@@ -1,0 +1,24 @@
+@import '_variables.scss';
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        li {
+            padding: $padding;
+            margin-left: $margin;
+
+            a {
+                text-decoration: none;
+                font-size: $text-lg;
+            }
+        }
+    }
+}

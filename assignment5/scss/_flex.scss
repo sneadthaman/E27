@@ -18,6 +18,9 @@
 
 .justify-content-end {
     justify-content: end;
+
+    /* Chrome */
+    justify-content: flex-end;
 }
 
 .justify-content-center {

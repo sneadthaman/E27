@@ -316,6 +316,7 @@ code {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  justify-content: flex-end;
 }
 
 .justify-content-center {
@@ -637,6 +638,8 @@ body {
 /* 90's Terminal Prompt */
 aside {
   background-color: #212529;
+  /* Needed for Chrome */
+  overflow: scroll;
 }
 
 aside p {

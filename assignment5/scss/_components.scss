@@ -6,7 +6,9 @@
 aside {
     
     background-color: $aside-bkg-color;
-        
+
+    /* Needed for Chrome */
+    overflow: scroll;
     p {
         color: $aside-fg-color;
         font-family: $font-aside-primary;

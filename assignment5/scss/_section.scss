@@ -1,0 +1,6 @@
+@import '_variables.scss';
+@import '_spacing.scss';
+
+section {
+    margin: calc(#{$margin} * 5);
+}

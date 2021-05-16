@@ -40,7 +40,7 @@ h1, h2, h3, h4, form legend {
     line-height: $heading-line-height;
 }
 
-h2, h3, h4 {
+h2, h3, h4, .fmpointifax {
     font-family: $font-secondary-header;
 }
 
@@ -48,6 +48,14 @@ h2, h3, h4 {
 
 .text-xxxl {
     font-size: $text-xxxl;
+}
+
+.text-md {
+    font-size: $text-md;
+}
+
+.futura {
+    font-family: $font-primary-header;
 }
 
 h1 {
@@ -70,9 +78,13 @@ small {
     font-size: $text-sm;
 }
 
-p {
+p, .inconsolata {
     font-family: $font-secondary;
     line-height: $body-line-height;
+}
+
+.elianto {
+    font-family: $font-tertiary;
 }
 
 a {
@@ -85,4 +97,9 @@ a {
 
 b, strong {
     font-weight: bold;
+}
+
+code {
+    color: $pink;
+    background-color: gray;
 }

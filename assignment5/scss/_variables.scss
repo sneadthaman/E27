@@ -7,11 +7,19 @@ $background-image: url("../images/hero_foggy_1182x665.jpg");
 $padding: .5em;
 $margin: 1em;
 
+/* Grid Columns */
+$grid-col: 6;
+
+/* Media Query Breakpoints */
+$bp-md: 768px;
+$bp-lg: 992px;
+
 
 $font-primary-header: 'Ailerons', monospace;
 $font-secondary-header: 'Press Start 2P', monospace;
 
 $font-secondary: 'Inconsolata', serif;
+$font-tertiary: 'Elianto', sans-serif;
 
 $font-aside-primary: 'FM Pointifax C', monospace;
 $font-aside-secondary: 'FM Pointifax A', monospace;

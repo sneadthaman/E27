@@ -1,10 +1,11 @@
+@import '_variables.scss';
 
 aside {
     
     p {
-        background-color: var(--aside-bkg-color);
-        color: var(--aside-fg-color);
-        font-family: var(--font-aside-primary);
-        font-size: var(--text-xl);
+        background-color: $aside-bkg-color;
+        color: $aside-fg-color;
+        font-family: $font-aside-primary;
+        font-size: $text-xl;
     }
 }

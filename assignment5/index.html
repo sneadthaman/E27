@@ -24,7 +24,7 @@
             <nav>
                 <ul>
                     <li><a href="#">Download</a></li>
-                    <li><a href="#">Docs</a></li>
+                    <li><a href="#docs">Docs</a></li>
                 </ul>
             </nav>
         </header>
@@ -35,6 +35,59 @@
             <p class="letter-spacing-2 ">Responsive CSS Framework</p>
         </div>
     </div>
+
+    <main class="container">
+        <h2 class="align-center margin-3 padding-3">Working With Futura</h2>
+
+        <section id="docs">
+            <h1 class="margin-3">First things first...</h1>
+            <p><a href="#">Download</a> the framework and place the <code>scss</code> folder at the root of your project
+                <b>OR</b> simply link to the cdn:</p>
+            <aside>
+                <p>http://LinkToCDN.com</p>
+            </aside>
+            <p>If you choose to link to the CDN, you will not have the ability to change any of the global variables
+                such as
+                fonts, colors, or layouts - but it's a good way to take 'er for a spin.</p>
+        </section>
+
+        <section>
+            <h1>Sections and Containers</h1>
+            <h3>Sections</h3>
+            <p>It is recommended to use the HTML <code>
+                    section</code> tag for each ... section.</p>
+            <p>Appropriate spacing has been applied so that each section of the page has the necessary separation
+                required to make sense of the content.</p>
+            <img src="images/sections.PNG" alt="Sections" />
+            <h3>Containers</h3>
+            <p>The <code>container</code> class should be used for the <code>main</code> section of the site. A width of
+                85% is applied.</p>
+        </section>
+
+        <section>
+            <h1>Typography and Color</h1>
+            <p><span class="text-md futura">Futura</span> comes with specific font types to achieve a modern, sleek
+                aesthetic such as the <code>$font-primary-header</code>. Although these can be modified in the Sass
+                files, why would you?</p>
+            <p>Fonts used with <span class="text-md futura">Futura</span>:</p>
+            <ul>
+                <li class="fmpointifax">FM Pointifax A</li>
+                <li class="elianto">Elianto</li>
+                <li class="futura">Ailerons</li>
+                <li class="inconsolata">Inconsolata</li>
+            </ul>
+            <p>You are <em>certainly</em> encouraged to adjust the colors to your liking. </p>
+            <img src="images/colors.PNG" alt="Colors" />
+        </section>
+
+        <section>
+            <h1>Layouts</h1>
+            <p>Layouts in <span class="futura text-md">Futura</span> are achieved leveraging <code>flex</code>. By
+                default, there is a 6 column grid system which can be modified by changing the <code>$grid-col</code>
+                variable either in <code>_variables.scss</code> file or by writing your own styles in
+                <code>custom-styles.scss</code> file (which will overwrite any of the default styles.</p>
+        </section>
+    </main>
 
 </body>
 

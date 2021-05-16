@@ -1,3 +1,4 @@
+/* This file was inspired by Berry, a previous project */
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Press+Start+2P&display=swap");
 html {
   -webkit-box-sizing: border-box;
@@ -113,7 +114,7 @@ body {
 }
 
 .letter-spacing-2 {
-  letter-spacing: .5em;
+  letter-spacing: .3em;
 }
 
 .height-100 {
@@ -130,6 +131,18 @@ body {
 
 .width-50 {
   width: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .letter-spacing-2 {
+    letter-spacing: .4em;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .letter-spacing-2 {
+    letter-spacing: .5em;
+  }
 }
 
 /* Utility file for text alignment */
@@ -150,6 +163,7 @@ body {
 /* Text Colors */
 /* Component Colors */
 /* Code Colors */
+/* Button Colors */
 body {
   background-color: var(--color-primary-bkg);
 }
@@ -168,6 +182,7 @@ body {
 /* Text Colors */
 /* Component Colors */
 /* Code Colors */
+/* Button Colors */
 body {
   background-color: var(--color-primary-bkg);
 }
@@ -270,7 +285,6 @@ code {
   background-color: gray;
 }
 
-/* 6 Column Grid (Flex) */
 /* Flex Helper Classes */
 .flex {
   display: -webkit-box;
@@ -282,6 +296,8 @@ code {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-preferred-size: calc(1 / 6);
+      flex-basis: calc(1 / 6);
 }
 
 .flex-column {
@@ -346,10 +362,6 @@ nav {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 nav ul {
@@ -359,10 +371,10 @@ nav ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 nav ul li {
@@ -373,6 +385,15 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   font-size: calc(1em * 1.3 * 1.3);
+}
+
+@media screen and (min-width: 768px) {
+  nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 /* Global Variables */
@@ -393,10 +414,25 @@ nav ul li a {
   background-size: cover;
 }
 
+/* Global Variables */
+/* Change the background image to your own */
+/* Padding and Margin */
+/* Grid Columns */
+/* Media Query Breakpoints */
+/* set base values */
+/* type scale */
+/* line-height */
+/* Letter Spacing */
 /* Container File - Basic sizing, padding, margin for Main section of website */
 .container {
-  width: 85%;
+  width: 95%;
   margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 85;
+  }
 }
 
 /* Global Variables */
@@ -499,7 +535,7 @@ nav ul li a {
 }
 
 .letter-spacing-2 {
-  letter-spacing: .5em;
+  letter-spacing: .3em;
 }
 
 .height-100 {
@@ -518,14 +554,48 @@ nav ul li a {
   width: 50%;
 }
 
+@media screen and (min-width: 768px) {
+  .letter-spacing-2 {
+    letter-spacing: .4em;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .letter-spacing-2 {
+    letter-spacing: .5em;
+  }
+}
+
 section {
-  margin: calc(1em * 5);
+  margin: calc(1em * 3);
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    margin: calc(1em * 4);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  section {
+    margin: calc(1em * 5);
+  }
 }
 
 /* Fully Responsive Images */
 img {
   max-width: 100%;
   text-align: center;
+}
+
+/* Colors */
+/* Main Colors */
+/* Text Colors */
+/* Component Colors */
+/* Code Colors */
+/* Button Colors */
+body {
+  background-color: var(--color-primary-bkg);
 }
 
 /* Global Variables */
@@ -537,10 +607,79 @@ img {
 /* type scale */
 /* line-height */
 /* Letter Spacing */
-aside p {
+footer {
+  background-color: #080e07;
+  color: #fdfdfe;
+  margin: 0;
+  padding: 0;
+  min-height: 85px;
+}
+
+/* Global Variables */
+/* Change the background image to your own */
+/* Padding and Margin */
+/* Grid Columns */
+/* Media Query Breakpoints */
+/* set base values */
+/* type scale */
+/* line-height */
+/* Letter Spacing */
+/* Colors */
+/* Main Colors */
+/* Text Colors */
+/* Component Colors */
+/* Code Colors */
+/* Button Colors */
+body {
+  background-color: var(--color-primary-bkg);
+}
+
+/* 90's Terminal Prompt */
+aside {
   background-color: #212529;
+}
+
+aside p {
   color: #7fff00;
   font-family: "FM Pointifax C", monospace;
-  font-size: calc(1em * 1.3 * 1.3 * 1.3);
+  font-size: calc(1em / 1.3);
+}
+
+/* Buttons */
+button {
+  color: #fdfdfe;
+  border: none;
+  padding: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  margin: 1em;
+}
+
+.button-primary {
+  background-color: #7b68ee;
+}
+
+.button-success {
+  background-color: #82c91e;
+}
+
+.button-danger {
+  background-color: #e03131;
+}
+
+@media screen and (min-width: 768px) {
+  aside p {
+    font-size: calc(1em * 1.3);
+  }
+  button {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  aside p {
+    font-size: calc(1em * 1.3 * 1.3);
+  }
 }
 /*# sourceMappingURL=style.css.map */

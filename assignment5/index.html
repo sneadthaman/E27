@@ -19,7 +19,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <div class="hero flex flex-column">
+    <div class="hero">
         <header class="flex justify-content-end width-100">
             <nav>
                 <ul>
@@ -31,13 +31,13 @@
         <div class="flex flex-column margin-top-3 width-100">
             <h1 class="text-xxxl align-center letter-spacing-2">Futura</h1>
         </div>
-        <div class="flex justify-content-center width-100 height-50 align-content-end">
-            <p class="letter-spacing-2 ">Responsive CSS Framework</p>
+        <div class="flex justify-content-center height-50 align-content-end">
+            <p class="letter-spacing-2 margin-bottom-2">Responsive CSS Framework</p>
         </div>
     </div>
 
     <main class="container">
-        <h2 class="align-center margin-3 padding-3">Working With Futura</h2>
+        <h2 class="align-center margin-3 padding-2">Working With Futura</h2>
 
         <section id="docs">
             <h1 class="margin-3">First things first...</h1>
@@ -86,8 +86,76 @@
                 default, there is a 6 column grid system which can be modified by changing the <code>$grid-col</code>
                 variable either in <code>_variables.scss</code> file or by writing your own styles in
                 <code>custom-styles.scss</code> file (which will overwrite any of the default styles.</p>
+            <p><span class="futura text-md">Futura</span> is written with simplicity in mind. Leave the grid alone - you
+                might break something!</p>
+        </section>
+
+        <section>
+            <h1>Navigation and Hero</h1>
+            <p>The nav bar is, by default, responsive and will stack into a vertical column on a mobile device. The
+                <span class="futura text-md">Futura</span> landing page is built this way. As the screen size gets
+                larger and passes the <code>$bp-md</code> breakpoint, the <code>flex-direction</code> property switches
+                to <code>row</code>. Since this is a CSS <em>only</em> framework (no JavaScript whatsoever), there isn't
+                an option for any off-canvas effects. Feel free to create one yourself!</p>
+            <p>The <code>.hero</code> class is already set up to have a <em>sweet</em> landing image, all you need to do
+                is swap out my 'foggy woods' image for your own.</p>
+        </section>
+
+        <section>
+            <h1>Components</h1>
+            <p>As of this writing, there are two different types of custom components. The <code>aside p</code> which is
+                a throwback to the 90's terminal prompts:</p>
+            <aside>
+                <p>$root@futura>> cat futura.txt</p>
+                <p>I look like an old terminal!</p>
+            </aside>
+            <p>Cool, right?</p>
+            <p>Simply add a <code>aside</code> tag with a <code>p</code> and <em>bam!</em></p>
+            <p>I'll bet, with a likkle JavaScript, you could make this into a <em>real</em> terminal prompt ;)</p>
+            <hr>
+            <h4 class="align-right">How about some buttons</h4>
+            <div class="flex flex-column">
+                <button class="button-primary">Primary Button</button>
+                <button class="button-success">Success</button>
+                <button class="button-danger">Danger</button>
+
+            </div>
+            <p>By default, buttons will take up 100% of the width of the parent container on mobile, and will reduce
+                to 50% after reaching the <code>$bp-md</code> breakpoint.</p>
+        </section>
+
+        <section>
+            <h1>Alignment and Spacing</h1>
+            <p><span class="futura text-md">Futura</span> has some built-in helper classes for basic utility functions
+                such
+                as <em>alignment</em> and <em>spacing (margin and padding)</em>. You never need to leave the HTML
+                document
+                to adjust spacing and alignment. Simply add the class names:</p>
+            <ul>
+                <li><code>align-left</code></li>
+                <li><code>align-right</code></li>
+                <li><code>align-center</code></li>
+            </ul>
+            <p>as well as:</p>
+            <ul>
+                <li><code>margin-top-2 (or 3)</code></li>
+                <li><code>margin-bottom-2 (or 3)</code></li>
+                <li><code>margin-left-2 (or 3)</code></li>
+                <li><code>margin-right-2 (or 3)</code></li>
+            </ul>
+            <ul>
+                <li><code>padding-top-2 (or 3)</code></li>
+                <li><code>padding-bottom-2 (or 3)</code></li>
+                <li><code>padding-left-2 (or 3)</code></li>
+                <li><code>padding-right-2 (or 3)</code></li>
+            </ul>
+            <p>to simply apply spacing to any element.</p>
         </section>
     </main>
+
+    <footer>
+        <p class="align-center padding-top-3">Developed by Sam Janvey, 2021</p>
+    </footer>
 
 </body>
 

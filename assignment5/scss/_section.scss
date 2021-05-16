@@ -2,5 +2,17 @@
 @import '_spacing.scss';
 
 section {
-    margin: calc(#{$margin} * 5);
+    margin: calc(#{$margin} * 3);
+}
+
+@media screen and (min-width: $bp-md) {
+    section {
+        margin: calc(#{$margin} * 4);
+    }
+}
+
+@media screen and (min-width: $bp-lg) {
+    section {
+        margin: calc(#{$margin} * 5);
+    }
 }

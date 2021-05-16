@@ -9,6 +9,7 @@ $margin: 1em;
 
 /* Grid Columns */
 $grid-col: 6;
+$flex-basis: calc(1 / #{$grid-col});
 
 /* Media Query Breakpoints */
 $bp-md: 768px;

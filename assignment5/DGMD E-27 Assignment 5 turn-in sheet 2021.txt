@@ -1,0 +1,144 @@
+﻿DGMD E-27 Assignment 5/Final project
+Your name:
+
+
+1.  Provide a link to the first page of your website:
+http://e27p5.samjanvey.com
+
+
+My site looks the way I want on (choose one):  PC
+
+
+With this browser (choose one): Firefox
+
+
+
+
+________________
+
+
+
+
+CODE (75 points)
+
+
+2.  6 column grid system
+
+
+Using:  Flexbox 
+
+
+Breakpoint values: 768px , 992px
+
+
+Default grid Sass partial file name: _flex.scss
+Starting line numbers: 1-41
+
+
+Breakpoint #1 grid Sass partial file name: _components.scss
+Starting line numbers: 42-50
+
+
+Breakpoint #2 grid Sass partial file name: _components.scss
+Starting line numbers: 52-56
+
+
+3.  Color scheme
+Sass partial file name: _colors.scss
+Sass line numbers: 1-28
+
+
+4.  Responsive navigation bar
+Sass partial file name: _nav.scss
+Sass line numbers: 1-29
+
+
+5.  Examples of RWD 2.0 implemented
+List 3 different examples of where you've made use of RWD 2.0 in your
+work.
+Example: padding, typography, and grid columns would count.
+However, padding, more padding, and yet more padding would NOT count.
+
+
+Sass partial file name: _spacing.scss
+Sass line numbers example 1: 104-114
+
+
+Sass partial file name: _section.scss
+Sass line numbers example 2: 8-18
+
+
+Sass partial file name: _container.scss
+Sass line numbers example 3: 10-14
+
+
+6.  Two elements
+Choose from: breadcrumb, button, card, form styling, hero unit/jumbotron,
+image styling, list styling, table styling, text styling elements,
+visibility classes.
+
+
+a.  Choice 1: Hero
+Sass partial file name: _hero.scss
+Sass line numbers: 1-10
+
+
+b.  Choice 2: Custom plus Buttons
+Sass partial file name: _components.scss
+Sass line numbers: 5-40
+
+
+
+
+Part 2: Documentation and examples (74 points)
+
+
+7. Framework name: Futura
+For each of the below items, provide a URL where the requested information
+is located.
+
+
+8. Download button: 
+
+
+9. Installation: http://e27p5.samjanvey.com
+
+
+10. Grid system install/examples: http://e27p5.samjanvey.com
+
+
+11. Nav bar install/examples: http://e27p5.samjanvey.com
+
+
+12: Styled element #1 install/examples: http://e27p5.samjanvey.com
+
+
+13: Styled element #2 install/examples: http://e27p5.samjanvey.com
+
+
+14: Sass docs for colors: http://e27p5.samjanvey.com
+
+
+15: Sass docs for fonts: http://e27p5.samjanvey.com
+
+
+16: Sass docs for media query breakpoints: http://e27p5.samjanvey.com
+
+
+17: Docs for anything else (list as many URLs as desired and describe what
+is located there): http://e27p5.samjanvey.com
+
+
+18: Example starter page: http://e27p5.samjanvey.com
+
+
+ABOVE AND BEYOND (16 POINTS)
+
+
+Identify what you did for Above and Beyond. Provide any relevant HTML,
+CSS, or Sass line number(s) and explanation of what you did. How many
+points do you think this was worth, and why? You can do more than one
+thing if you want.
+If you add code features, add matching docs for full credit.
+
+The whole project is wrapped up into a single web page which explains how to use the framework, and is also itself leveraging the framework. For the above and beyond, I created a cool custom component using the 'aside' and corresponding 'p' tag to make a old terminal prompt styled element. I think the overall aesthetic is quite lovely and should be used , for the most part, out of the box. 16 points!

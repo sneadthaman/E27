@@ -1,0 +1,46 @@
+/* Global Variables */
+
+/* Change the background image to your own */
+$background-image: url("../images/hero_foggy_1182x665.jpg");
+
+/* Padding and Margin */
+$padding: .5em;
+$margin: 1em;
+
+/* Grid Columns */
+$grid-col: 6;
+$flex-basis: calc(1 / #{$grid-col});
+
+/* Media Query Breakpoints */
+$bp-md: 768px;
+$bp-lg: 992px;
+
+
+$font-primary-header: 'Ailerons', monospace;
+$font-secondary-header: 'Press Start 2P', monospace;
+
+$font-secondary: 'Inconsolata', serif;
+$font-tertiary: 'Elianto', sans-serif;
+
+$font-aside-primary: 'FM Pointifax C', monospace;
+$font-aside-secondary: 'FM Pointifax A', monospace;
+
+    /* set base values */
+$text-base-size: 1em;
+$text-scale-ratio: 1.3;
+
+    /* type scale */
+$text-xs: calc(1em / (#{#{$text-scale-ratio}} * #{$text-scale-ratio}));
+$text-sm: calc(1em / #{$text-scale-ratio});
+$text-md: calc(1em * #{$text-scale-ratio});
+$text-lg: calc(1em * #{$text-scale-ratio} * #{$text-scale-ratio});
+$text-xl: calc(1em * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio});
+$text-xxl: calc(1em * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio});
+$text-xxxl: calc(1em * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio});
+
+    /* line-height */
+$heading-line-height: 1.2;
+$body-line-height: 1.4;
+
+    /* Letter Spacing */
+$letter-spacing: $heading-line-height;

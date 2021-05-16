@@ -1,0 +1,14 @@
+@import '_variables.scss';
+
+/* Container File - Basic sizing, padding, margin for Main section of website */
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+@media screen and (min-width: $bp-md) {
+    .container {
+        width: 85;
+    }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div class="hero">
+        <header class="flex justify-content-end width-100">
+            <nav>
+                <ul>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#docs">Docs</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="flex flex-column margin-top-3 width-100">
+            <h1 class="text-xxxl align-center letter-spacing-2">Futura</h1>
+        </div>
+        <div class="flex justify-content-center height-50 align-content-end">
+            <p class="letter-spacing-2 margin-bottom-2">Responsive CSS Framework</p>
+        </div>
+    </div>
+
+    <main class="container">
+        <h2 class="align-center margin-3 padding-2">Working With Futura</h2>
+
+        <section id="docs">
+            <h1 class="margin-3">First things first...</h1>
+            <p><a href="#">Download</a> the framework and place the <code>scss</code> folder at the root of your project
+                <b>OR</b> simply link to the cdn:</p>
+            <aside>
+                <p>http://LinkToCDN.com</p>
+            </aside>
+            <p>If you choose to link to the CDN, you will not have the ability to change any of the global variables
+                such as
+                fonts, colors, or layouts - but it's a good way to take 'er for a spin.</p>
+        </section>
+
+        <section>
+            <h1>Sections and Containers</h1>
+            <h3>Sections</h3>
+            <p>It is recommended to use the HTML <code>
+                    section</code> tag for each ... section.</p>
+            <p>Appropriate spacing has been applied so that each section of the page has the necessary separation
+                required to make sense of the content.</p>
+            <img src="images/sections.PNG" alt="Sections" />
+            <h3>Containers</h3>
+            <p>The <code>container</code> class should be used for the <code>main</code> section of the site. A width of
+                85% is applied.</p>
+        </section>
+
+        <section>
+            <h1>Typography and Color</h1>
+            <p><span class="text-md futura">Futura</span> comes with specific font types to achieve a modern, sleek
+                aesthetic such as the <code>$font-primary-header</code>. Although these can be modified in the Sass
+                files, why would you?</p>
+            <p>Fonts used with <span class="text-md futura">Futura</span>:</p>
+            <ul>
+                <li class="fmpointifax">FM Pointifax A</li>
+                <li class="elianto">Elianto</li>
+                <li class="futura">Ailerons</li>
+                <li class="inconsolata">Inconsolata</li>
+            </ul>
+            <p>You are <em>certainly</em> encouraged to adjust the colors to your liking. </p>
+            <img src="images/colors.PNG" alt="Colors" />
+        </section>
+
+        <section>
+            <h1>Layouts</h1>
+            <p>Layouts in <span class="futura text-md">Futura</span> are achieved leveraging <code>flex</code>. By
+                default, there is a 6 column grid system which can be modified by changing the <code>$grid-col</code>
+                variable either in <code>_variables.scss</code> file or by writing your own styles in
+                <code>custom-styles.scss</code> file (which will overwrite any of the default styles.</p>
+            <p><span class="futura text-md">Futura</span> is written with simplicity in mind. Leave the grid alone - you
+                might break something!</p>
+        </section>
+
+        <section>
+            <h1>Navigation and Hero</h1>
+            <p>The nav bar is, by default, responsive and will stack into a vertical column on a mobile device. The
+                <span class="futura text-md">Futura</span> landing page is built this way. As the screen size gets
+                larger and passes the <code>$bp-md</code> breakpoint, the <code>flex-direction</code> property switches
+                to <code>row</code>. Since this is a CSS <em>only</em> framework (no JavaScript whatsoever), there isn't
+                an option for any off-canvas effects. Feel free to create one yourself!</p>
+            <p>The <code>.hero</code> class is already set up to have a <em>sweet</em> landing image, all you need to do
+                is swap out my 'foggy woods' image for your own.</p>
+        </section>
+
+        <section>
+            <h1>Components</h1>
+            <p>As of this writing, there are two different types of custom components. The <code>aside p</code> which is
+                a throwback to the 90's terminal prompts:</p>
+            <aside>
+                <p>$root@futura>> cat futura.txt</p>
+                <p>I look like an old terminal!</p>
+            </aside>
+            <p>Cool, right?</p>
+            <p>Simply add a <code>aside</code> tag with a <code>p</code> and <em>bam!</em></p>
+            <p>I'll bet, with a likkle JavaScript, you could make this into a <em>real</em> terminal prompt ;)</p>
+            <hr>
+            <h4 class="align-right">How about some buttons</h4>
+            <div class="flex flex-column">
+                <button class="button-primary">Primary Button</button>
+                <button class="button-success">Success</button>
+                <button class="button-danger">Danger</button>
+
+            </div>
+            <p>By default, buttons will take up 100% of the width of the parent container on mobile, and will reduce
+                to 50% after reaching the <code>$bp-md</code> breakpoint.</p>
+        </section>
+
+        <section>
+            <h1>Alignment and Spacing</h1>
+            <p><span class="futura text-md">Futura</span> has some built-in helper classes for basic utility functions
+                such
+                as <em>alignment</em> and <em>spacing (margin and padding)</em>. You never need to leave the HTML
+                document
+                to adjust spacing and alignment. Simply add the class names:</p>
+            <ul>
+                <li><code>align-left</code></li>
+                <li><code>align-right</code></li>
+                <li><code>align-center</code></li>
+            </ul>
+            <p>as well as:</p>
+            <ul>
+                <li><code>margin-top-2 (or 3)</code></li>
+                <li><code>margin-bottom-2 (or 3)</code></li>
+                <li><code>margin-left-2 (or 3)</code></li>
+                <li><code>margin-right-2 (or 3)</code></li>
+            </ul>
+            <ul>
+                <li><code>padding-top-2 (or 3)</code></li>
+                <li><code>padding-bottom-2 (or 3)</code></li>
+                <li><code>padding-left-2 (or 3)</code></li>
+                <li><code>padding-right-2 (or 3)</code></li>
+            </ul>
+            <p>to simply apply spacing to any element.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p class="align-center padding-top-3">Developed by Sam Janvey, 2021</p>
+    </footer>
+
+</body>
+
+</html>

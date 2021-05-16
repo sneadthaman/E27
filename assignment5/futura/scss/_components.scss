@@ -1,0 +1,56 @@
+@import '_variables.scss';
+@import '_colors.scss';
+
+
+/* 90's Terminal Prompt */
+aside {
+    
+    background-color: $aside-bkg-color;
+        
+    p {
+        color: $aside-fg-color;
+        font-family: $font-aside-primary;
+        font-size: $text-sm;
+    }
+}
+
+
+/* Buttons */
+
+button {
+    color: $color-primary-bkg;
+    border: none;
+    padding: $padding;
+    text-align: center;
+    text-decoration: none;
+    font-size: $text-base-size;
+    margin: $margin;
+}
+
+.button-primary {
+    background-color: $button-primary-bg;
+}
+
+.button-success {
+    background-color: $button-success-bg;
+}
+
+.button-danger {
+    background-color: $button-danger-bg;
+}
+
+@media screen and (min-width: $bp-md) {
+    aside p {
+        font-size: $text-md;
+    }
+
+    button {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: $bp-lg) {
+    aside p {
+        font-size: $text-lg;
+    }
+}
